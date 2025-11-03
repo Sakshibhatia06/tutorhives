@@ -72,9 +72,15 @@ export default function HomeworkBenefits() {
           ))}
         </div>
 
-        <button className="mt-14 bg-[#b48232] text-white px-8 py-4 rounded-md text-sm font-medium hover:opacity-90 transition">
-          Get College Homework Help Now!
-        </button>
+        <a
+  href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20need%20homework%20help"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition block text-center"
+>
+  Get Homework Help now!
+</a>
+
       </div>
     </section>
   );
