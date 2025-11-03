@@ -25,7 +25,6 @@ export default function DoMyAssignmentPage() {
       <BonusesSection/>
       <FAQ />
       <WhatsAppButton/>
-      <Footer />
     </>
   );
 }
