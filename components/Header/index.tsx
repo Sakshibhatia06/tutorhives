@@ -177,7 +177,7 @@ const Header = () => {
   rel="noopener noreferrer"
   className="bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition block text-center"
 >
-  Get Homework Help now!
+  Sign Up
 </a>
 
         </div>
