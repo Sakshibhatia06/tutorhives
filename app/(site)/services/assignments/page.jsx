@@ -34,7 +34,6 @@ export default function AssignmentPage() {
       <FAQ />
       <WhatsAppButton/>
       <GlobalPartnerSection/>
-      <Footer />
     </>
   );
 }
