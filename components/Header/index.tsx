@@ -179,7 +179,7 @@ const Header = () => {
 
         {/* Right Buttons */}
         <div className="hidden xl:block">
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center">
   <a
     href="https://wa.me/917000000000?text=Hi%20I%20need%20homework%20help"
     target="_blank"
