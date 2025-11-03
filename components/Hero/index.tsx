@@ -87,8 +87,8 @@ export default function Hero() {
 
         {/* Button */}
        <div className="flex justify-center mt-8">
-  <a
-    href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20need%20homework%20help"
+ <a
+    href="https://wa.me/917000000000?text=Hi%20I%20need%20homework%20help"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-block bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition text-center"
