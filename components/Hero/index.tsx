@@ -91,15 +91,17 @@ export default function Hero() {
         </button>
 
         {/* Ratings */}
-        <div className="flex justify-between gap-24 md:gap-32 mt-10">
-          <div className="flex items-center gap-2 text-white text-3xl font-semibold">
-            ⭐ <span className="opacity-90">Trustpilot</span> 4.4
-          </div>
-          <div className="flex items-center gap-2 text-white text-3xl font-semibold">
-            ⭐ <span className="opacity-90">EduReviewer</span> 4.4
-          </div>
-        </div>
-      </div>
+        <div className="flex flex-col md:flex-row justify-between md:gap-32 gap-4 mt-10 text-center md:text-left">
+
+  <div className="flex items-center justify-center md:justify-start gap-2 text-white text-2xl md:text-3xl font-semibold">
+    ⭐ <span className="opacity-90">Trustpilot</span> 4.4
+  </div>
+
+  <div className="flex items-center justify-center md:justify-start gap-2 text-white text-2xl md:text-3xl font-semibold">
+    ⭐ <span className="opacity-90">EduReviewer</span> 4.4
+  </div>
+
+</div>
 
       {/* Bottom Curve Bar */}
       <div className="bg-[#8a6220] py-6 relative z-10">
