@@ -100,7 +100,7 @@ export default function Hero() {
   <div className="flex items-center justify-center md:justify-start gap-2 text-white text-2xl md:text-3xl font-semibold">
     ⭐ <span className="opacity-90">EduReviewer</span> 4.4
   </div>
-
+        </div>
 </div>
 
       {/* Bottom Curve Bar */}
