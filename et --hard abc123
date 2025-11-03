@@ -1,0 +1,11 @@
+[33m2228b05[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33m2228b05[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{1}: checkout: moving from main to main
+[33m2228b05[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{2}: rebase (abort): returning to refs/heads/main
+[33m920849e[m HEAD@{3}: commit (merge): your message
+[33m168ba8f[m HEAD@{4}: commit: initial changes
+[33m75b2d53[m HEAD@{5}: commit: initial changes
+[33mc718d6f[m HEAD@{6}: commit: main changes
+[33mff9a065[m HEAD@{7}: pull origin main --rebase (start): checkout ff9a0656e4d7903a9719f99c996492a0e8f40512
+[33m2228b05[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{8}: commit: Updated subject page styling and header improvements
+[33m62cb12c[m HEAD@{9}: Branch: renamed refs/heads/master to refs/heads/main
+[33m62cb12c[m HEAD@{11}: commit (initial): first commit
