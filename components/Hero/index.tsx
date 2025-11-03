@@ -86,9 +86,15 @@ export default function Hero() {
         </p>
 
         {/* Button */}
-        <button className="bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition">
-          Get Homework Help now!
-        </button>
+        <a
+  href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20need%20homework%20help"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition block text-center"
+>
+  Get Homework Help now!
+</a>
+
 
         {/* Ratings */}
         <div className="flex flex-col md:flex-row justify-between md:gap-32 gap-4 mt-10 text-center md:text-left">
