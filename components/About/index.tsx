@@ -82,9 +82,15 @@ const About = () => {
                 </li>
               </ul>
 
-              <button className="mt-8 px-8 py-3 rounded-lg font-semibold bg-gradient-to-r from-[#F9E3A6] via-[#E4BE67] to-[#C59637] text-black shadow-md hover:scale-105 transition-all">
-                Sign Up Now!
-              </button>
+             <a
+  href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20need%20homework%20help"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition block text-center"
+>
+  Get Homework Help now!
+</a>
+
             </motion.div>
 
           </div>
