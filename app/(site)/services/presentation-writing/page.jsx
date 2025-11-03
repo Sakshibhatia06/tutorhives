@@ -40,8 +40,6 @@ export default function DoMyAssignmentPage() {
     "The best thing you can do is call Tutor Hives – a pioneer PowerPoint presentation writing service with a pool of creative writers. Our talented writers will create an informative presentation, artistically design it, and effectively communicate your point. This PowerPoint presentation help will raise your GPA and help you leave a lasting impression on your audience."
   ]}
 />
-
-      <Footer />
     </>
   );
 }
