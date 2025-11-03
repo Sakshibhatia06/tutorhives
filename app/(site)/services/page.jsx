@@ -18,7 +18,6 @@ export default function ServicePage() {
         <FAQ />
         <WhatsAppButton />
       </main>
-      <Footer />
     </>
   );
 }
