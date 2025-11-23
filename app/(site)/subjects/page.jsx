@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import TutorHero from "@/components/TutorHero";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
