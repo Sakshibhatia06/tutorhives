@@ -19,7 +19,7 @@ export default function Hero() {
   }, []);
 
   const VerifiedBadge = () => (
-    <svg width="72" height="72" viewBox="0 0 130 130" fill="none">
+    <svg width="120" height="120" viewBox="0 0 130 130" fill="none">
       <defs>
         <radialGradient id="gold_grad" cx="50%" cy="50%" r="70%">
           <stop offset="0%" stopColor="#f6d890" />
@@ -37,7 +37,7 @@ export default function Hero() {
   );
 
   const MoneyBackBadge = () => (
-    <svg width="72" height="72" viewBox="0 0 130 130" fill="none">
+    <svg width="120" height="120" viewBox="0 0 130 130" fill="none">
       <defs>
         <radialGradient id="gold_grad2" cx="50%" cy="50%" r="70%">
           <stop offset="0%" stopColor="#f6d890" />
@@ -86,24 +86,36 @@ export default function Hero() {
         </p>
 
         {/* Button */}
-        <button className="bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition">
-          Get Homework Help now!
-        </button>
+       <div className="flex justify-center mt-8">
+  <a
+    href="https://wa.me/917000000000?text=Hi%20I%20need%20homework%20help"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition text-center"
+  >
+    Get Homework Help now!
+  </a>
+</div>
+
 
         {/* Ratings */}
-        <div className="flex justify-between gap-24 md:gap-32 mt-10">
-          <div className="flex items-center gap-2 text-white text-3xl font-semibold">
-            ⭐ <span className="opacity-90">Trustpilot</span> 4.4
-          </div>
-          <div className="flex items-center gap-2 text-white text-3xl font-semibold">
-            ⭐ <span className="opacity-90">EduReviewer</span> 4.4
-          </div>
-        </div>
+        <div className="flex flex-col md:flex-row justify-between md:gap-32 gap-4 mt-10 text-center md:text-left">
+
+  <div className="flex items-center justify-center md:justify-start gap-2 text-white text-2xl md:text-3xl font-semibold">
+    ⭐ <span className="opacity-90">Trustpilot</span> 4.4
+  </div>
+
+  <div className="flex items-center justify-center md:justify-start gap-2 text-white text-2xl md:text-3xl font-semibold">
+    ⭐ <span className="opacity-90">EduReviewer</span> 4.4
+  </div>
+
+</div>
+
       </div>
 
       {/* Bottom Curve Bar */}
       <div className="bg-[#8a6220] py-6 relative z-10">
-        <p className="text-center text-white/90 font-medium mb-10">
+        <p className="text-center text-white/90 text-xl mb-10">
           Trusted by 2.1M+ Happy Students
         </p>
 

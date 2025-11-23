@@ -40,7 +40,6 @@ export default function DoMyAssignmentPage() {
 "Grad school or university students are not oblivious about the promised benefits a project report writing brings to them. Undertaking projects on several topics enables STEM students to test their hands upon knowledge-centric writing and enhances their ability to communicate how skillfully they have transmitted the information with logical reasoning. Only if it is that easier to do than say. If you listen to Tutor Hives experts, a project report reflects the scientific knowledge and skills that a student possesses. However, it is undeniable that expressing it through academic writing is the biggest challenge. Here lie the key factors that explain why the need for project report writing help is growing multifold over time. The following paragraphs will also reveal why Tutor Hives the best Online project report maker for students."
         ]}
       />
-      <Footer />
     </>
   );
 }

@@ -19,19 +19,31 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleStickyMenu);
   }, []);
 
+  useEffect(() => {
+    setNavigationOpen(false);
+    setOpenSubmenu(null);
+    setOpenChildMenu(null);
+  }, [pathUrl]);
+
   const toggleSubmenu = (id: number) =>
     setOpenSubmenu(openSubmenu === id ? null : id);
   const toggleChildMenu = (id: number) =>
     setOpenChildMenu(openChildMenu === id ? null : id);
 
+  // ✅ Close menu on click (mobile)
+  const closeMobileMenu = () => {
+    setNavigationOpen(false);
+    setOpenSubmenu(null);
+    setOpenChildMenu(null);
+  };
+
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full py-4 transition-all duration-200 backdrop-blur-md ${
-        stickyMenu ? "bg-[#ffffff]" : "bg-[#ffffff]"
-      }`}
+      className={`fixed left-0 top-0 z-50 w-full py-4 transition-all duration-200 backdrop-blur-md ${stickyMenu ? "bg-[#ffffff]" : "bg-[#ffffff]"
+        }`}
     >
       <div className="relative mx-auto max-w-6xl flex items-center justify-between px-4 md:px-8 2xl:px-0">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" onClick={closeMobileMenu}>
           <div className="relative">
             <Image
               src="/images/tutor-hives.png"
@@ -53,37 +65,32 @@ const Header = () => {
 
         {/* Nav */}
         <nav
-          className={`absolute left-0 top-full w-full shadow-lg bg-[rgba(255,255,255)] xl:bg-transparent xl:backdrop-blur-none xl:static xl:block xl:w-auto xl:shadow-none transition-all duration-300 ${
-            navigationOpen ? "block" : "hidden xl:block"
-          }`}
+          className={`absolute left-0 top-full w-full shadow-lg bg-[rgba(255,255,255)] xl:bg-transparent xl:backdrop-blur-none xl:static xl:block xl:w-auto xl:shadow-none transition-all duration-300 ${navigationOpen ? "block" : "hidden xl:block"
+            }`}
         >
           <ul className="flex flex-col gap-2 max-h-[80vh] text-lg overflow-y-auto scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-transparent px-4 py-4 xl:max-h-none xl:overflow-visible xl:flex-row xl:items-center xl:gap-10 xl:justify-center">
             {menuData.map((menuItem) => (
               <li key={menuItem.id} className="relative group">
                 {menuItem.submenu ? (
                   <>
-                    {/* ✅ Clickable parent + Dropdown toggle button */}
+                    {/* ✅ Clickable parent + Dropdown toggle */}
                     <div className="flex items-center gap-2">
-                      
-                      {/* Parent link */}
                       <Link
                         href={menuItem.path || "#"}
-                        className={`tracking-wide text-black ${
-                          pathUrl === menuItem.path ? "text-[#000000]" : ""
-                        }`}
+                        className={`tracking-wide text-black ${pathUrl === menuItem.path ? "text-[#000000]" : ""
+                          }`}
+                        onClick={closeMobileMenu} // ✅
                       >
                         {menuItem.title}
                       </Link>
 
-                      {/* Dropdown arrow button (mobile only) */}
                       <button
                         onClick={() => toggleSubmenu(menuItem.id)}
                         className="xl:hidden"
                       >
                         <svg
-                          className={`h-3 w-3 text-black fill-current transition-transform duration-200 ${
-                            openSubmenu === menuItem.id ? "rotate-180" : ""
-                          }`}
+                          className={`h-3 w-3 text-black fill-current transition-transform duration-200 ${openSubmenu === menuItem.id ? "rotate-180" : ""
+                            }`}
                           viewBox="0 0 512 512"
                         >
                           <path d="M256 294.1l-135.5-135.5-45.3 45.3L256 384.8l180.8-180.9-45.3-45.3z" />
@@ -94,12 +101,12 @@ const Header = () => {
                     {/* Submenu */}
                     <ul
                       className={`submenu-scroll max-h-[70vh] text-lg overflow-y-auto xl:absolute xl:left-0 xl:top-14 xl:min-w-[280px]
-        bg-white rounded-xl border border-[#e6d8a3]
-        p-3 shadow-[0_4px_18px_rgba(0,0,0,0.08)]
-        xl:opacity-0 xl:invisible xl:group-hover:visible xl:group-hover:opacity-100
-        transition-all duration-200
-        ${openSubmenu === menuItem.id ? "block" : "hidden xl:block"}
-      `}
+                        bg-white rounded-xl border border-[#e6d8a3]
+                        p-3 shadow-[0_4px_18px_rgba(0,0,0,0.08)]
+                        xl:opacity-0 xl:invisible xl:group-hover:visible xl:group-hover:opacity-100
+                        transition-all duration-200
+                        ${openSubmenu === menuItem.id ? "block" : "hidden xl:block"}
+                      `}
                     >
                       {menuItem.submenu.map((subItem) => (
                         <li key={subItem.id} className="relative group/sub">
@@ -111,30 +118,29 @@ const Header = () => {
                               >
                                 {subItem.title}
                                 <svg
-                                  className={`ml-2 h-3 w-3 fill-current transition-transform duration-200 xl:hidden ${
-                                    openChildMenu === subItem.id
+                                  className={`ml-2 h-3 w-3 fill-current transition-transform duration-200 xl:hidden ${openChildMenu === subItem.id
                                       ? "rotate-90"
                                       : ""
-                                  }`}
+                                    }`}
                                   viewBox="0 0 512 512"
                                 >
                                   <path d="M184 112l144 144-144 144z" />
                                 </svg>
                               </button>
 
-                              {/* Nested child menu */}
+                              {/* Child menu */}
                               <ul
-                                className={`xl:absolute xl:left-52 xl:top-0 xl:min-w-[220px] max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-transparent xl:bg-[rgba(255,255,255,0.95)] xl:p-3 xl:shadow-lg xl:opacity-0 xl:invisible xl:group-hover/sub:visible xl:group-hover/sub:opacity-100 xl:transition-all xl:duration-200 ${
-                                  openChildMenu === subItem.id
+                                className={`xl:absolute xl:left-52 xl:top-0 xl:min-w-[220px] max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-transparent xl:bg-[rgba(255,255,255,0.95)] xl:p-3 xl:shadow-lg xl:opacity-0 xl:invisible xl:group-hover/sub:visible xl:group-hover/sub:opacity-100 xl:transition-all xl:duration-200 ${openChildMenu === subItem.id
                                     ? "block"
                                     : "hidden xl:block"
-                                }`}
+                                  }`}
                               >
                                 {subItem.submenu.map((child) => (
                                   <li key={child.id}>
                                     <Link
                                       href={child.path || "#"}
                                       className="block px-4 py-2 text-sm text-black"
+                                      onClick={closeMobileMenu} // ✅
                                     >
                                       {child.title}
                                     </Link>
@@ -146,6 +152,7 @@ const Header = () => {
                             <Link
                               href={subItem.path || "#"}
                               className="block px-4 py-2 text-sm text-black"
+                              onClick={closeMobileMenu} // ✅
                             >
                               {subItem.title}
                             </Link>
@@ -157,9 +164,9 @@ const Header = () => {
                 ) : (
                   <Link
                     href={menuItem.path || "#"}
-                    className={`block tracking-wide text-black transition-colors duration-200 ${
-                      pathUrl === menuItem.path ? "text-[#000000]" : ""
-                    }`}
+                    className={`block tracking-wide text-black transition-colors duration-200 ${pathUrl === menuItem.path ? "text-[#000000]" : ""
+                      }`}
+                    onClick={closeMobileMenu} // ✅
                   >
                     {menuItem.title}
                   </Link>
@@ -171,12 +178,16 @@ const Header = () => {
 
         {/* Right Buttons */}
         <div className="hidden xl:block">
-          <Link
-            href="/signup"
-            className="hidden xl:block bg-[#B89236] text-white font-semibold px-6 py-2 rounded-md"
-          >
-            Sign Up
-          </Link>
+          <div className="flex justify-center mt-8">
+            <a
+              href="https://wa.me/917000000000?text=Hi%20I%20need%20homework%20help"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition text-center"
+            >
+              Sign Up
+            </a>
+          </div>
         </div>
       </div>
     </header>

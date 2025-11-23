@@ -41,7 +41,6 @@ export default function DoMyAssignmentPage() {
 "When you ask us to “write me a speech”, we employ some of our best writers of our professional speech writing services. The advanced skillset of our “write me a speech” writers is what makes our professional speech writing services the best. So what is a good speech writing skillset?"
         ]}
       />
-      <Footer />
     </>
   );
 }

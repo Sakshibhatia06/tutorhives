@@ -35,9 +35,6 @@ const About = () => {
                 fill
               />
             </motion.div>
-
-            {/* ===== Right Content ===== */}
-            {/* ===== Right Content ===== */}
             <motion.div
               variants={{
                 hidden: { opacity: 0, x: 20 },

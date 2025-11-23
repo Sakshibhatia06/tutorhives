@@ -36,10 +36,10 @@ export default function TutorHero() {
             alt="Tutor illustration"
             fill
             className="object-contain drop-shadow-xl"
-              style={{
-                filter:
-                  " sepia(147%) saturate(219%) brightness(110%) contrast(96%) hue-rotate(-10deg) drop-shadow(rgba(255, 215, 140, 0.5) 0px 0px 20px)",
-              }}
+            style={{
+              filter:
+                "brightness(100%) contrast(120%) saturate(150%) blur(0px) hue-rotate(180deg)"
+            }}
           />
         </div>
 

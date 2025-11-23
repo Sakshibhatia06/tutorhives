@@ -31,17 +31,37 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Services */}
-        <div>
-          <h3 className="font-bold text-lg mb-4">Services</h3>
-          <ul className="space-y-2 text-white/90">
-            {[
-              "Assignment","Live Sessions","Lab Report Help","Project Report Writing",
-              "Speech Writing Service","Presentation Writing Service","Video Solutions",
-              "Online Tutoring","Do My Homework","Do My Assignment","Paper Writing Services",
-              "Pay Someone To Do My Homework"
-            ].map((i)=> <li key={i}>{i}</li>)}
-          </ul>
-        </div>
+        {/* Services */}
+<div>
+  <h3 className="font-bold text-lg mb-4">Services</h3>
+  <ul className="space-y-2 text-white/90">
+    {[
+      { title: "Assignment", path: "/services/assignments" },
+      { title: "Do My Assignment", path: "/services/do-my-assignment" },
+      { title: "Do My Homework", path: "/services/do-my-homework" },
+      { title: "Do My Maths Homework", path: "/services/do-my-maths-homework" },
+      { title: "Lab Report", path: "/services/lab-report" },
+      { title: "Live Session", path: "/services/live-session" },
+      { title: "Online Tutoring", path: "/services/online-tutoring" },
+      { title: "Project Report Writing", path: "/services/project-report-writing" },
+      { title: "Paper Writing Help", path: "/services/paper-writing-help" },
+      { title: "Project Report Help", path: "/services/project-report-help" },
+      { title: "Presentation Writing", path: "/services/presentation-writing" },
+      { title: "Pay Someone To Do My Homework", path: "/services/pay-someone-to-do-my-homework" },
+      { title: "Paying Someone To Write Your Paper", path: "/services/paying-someone-to-write-your-paper" },
+      { title: "Speech Writing", path: "/services/speech-writing" },
+      { title: "Video Solutions", path: "/services/video-solutions" },
+      { title: "Write Research Paper", path: "/services/write-research-paper" },
+    ].map((item) => (
+      <li key={item.title}>
+        <a href={item.path} className="hover:underline">
+          {item.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
         {/* Branch */}
         <div>

@@ -27,7 +27,6 @@ export default function DoMyAssignmentPage() {
       <FAQ />
       <WriteMyPaper/>
       <WhatsAppButton/>
-      <Footer />
     </>
   );
 }

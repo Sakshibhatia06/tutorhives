@@ -53,8 +53,12 @@ export default function ServiceHero({
               width={800}
               height={200}
               className="w-full max-w-[800px]"
+              style={{
+                filter: "brightness(110%) contrast(100%) saturate(100%) blur(0px) hue-rotate(180deg)"
+              }}
             />
           </div>
+
         </div>
 
       </div>

@@ -40,7 +40,6 @@ export default function DoMyAssignmentPage() {
                 "The academic frontier is changing rapidly. Students and teachers alike carry the burden of expectations upon them. The education system works to benefit individuals who undergo holistic development rather than those whose talents are limited to rote learning. This puts an immeasurable burden on students in schools and colleges- they have to prioritize other things, not just their studies. It means that they have to dedicate a substantial amount of time to different practical opportunities and excel in their studies. This can lead to students frantically trying to find ways to achieve academic excellence a bit faster. Educational topics in schools and colleges are a challenge in themselves. The concepts are tough to grasp, and students need to keep regularly practicing to achieve excellence, It is where Tutor Hives Video Solution service comes to help."
               ]}
             />
-      <Footer />
     </>
   );
 }

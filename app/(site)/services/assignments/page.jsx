@@ -11,7 +11,6 @@ import WhoIsThisFor from "@/components/WhoIsThisFor";
 import StudentStories from "@/components/StudentStories";
 import About from "@/components/About";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export default function AssignmentPage() {
   return (
@@ -34,7 +33,6 @@ export default function AssignmentPage() {
       <FAQ />
       <WhatsAppButton/>
       <GlobalPartnerSection/>
-      <Footer />
     </>
   );
 }
