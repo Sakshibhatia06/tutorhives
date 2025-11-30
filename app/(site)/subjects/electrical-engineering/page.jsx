@@ -114,7 +114,7 @@ export default function AccountingHomeworkHelp() {
             <HowItWorksSubjectsSection
                 title="What TutorHives.com Helps With"
                 subtitle="We Solve a Wide Range of Electrical Engineering Tasks"
-                bullets={[
+                points={[
                     "TutorHives handles assignments across multiple EE domains, including:",
                     "Circuit Theory & Network Analysis",
                     "Electrical Machines & Power Systems",
@@ -130,7 +130,7 @@ export default function AccountingHomeworkHelp() {
             />
             <WhyStudentsPrefer
                 title="You Receive Clear, Ready-to-Submit Work"
-                points={[
+               bullets={[
                     "Your final solution includes:",
                     "Fully solved numerical problems",
                     "Neatly drawn diagrams and labeled circuit illustrations",
