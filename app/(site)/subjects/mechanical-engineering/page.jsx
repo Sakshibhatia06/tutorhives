@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Chemistry Homework Help | TutorHives.com",
-  description:
-    "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
+    title: "Mechanical Engineering Homework Help | TutorHives.com",
+    description:
+        "Get expert-solved mechanical engineering homework and assignments from TutorHives.com. Clear, accurate, ready-to-submit solutions for students.",
 };
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
@@ -14,73 +14,149 @@ import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+const faqData = [
+    {
+        id: 1,
+        question: "What types of mechanical engineering homework can you solve?",
+        answer:
+            "We help with statics, dynamics, thermodynamics, fluid mechanics, machine design, solid mechanics, heat transfer, vibrations, numerical problems and more.",
+    },
+    {
+        id: 2,
+        question: "Can you help with urgent mechanical engineering assignments?",
+        answer:
+            "Absolutely. We handle urgent tasks regularly. If it's doable in your timeline, we’ll complete it quickly without compromising quality.",
+    },
+    {
+        id: 3,
+        question: "Do you provide diagrams, sketches or engineering drawings?",
+        answer:
+            "Yes — if required, we can create clean, precise diagrams or labeled sketches to match your assignment instructions.",
+    },
+    {
+        id: 4,
+        question: "Will the solutions have step-by-step explanations?",
+        answer:
+            "Yes. Many students request detailed steps, and we’re happy to include them so you can understand the logic behind the answers.",
+    },
+    {
+        id: 5,
+        question: "Can you help with simulation or CAD tasks?",
+        answer:
+            "We can help with theory-based questions, explanations, and problem-solving related to CAD/FEA concepts. However, we do not produce full CAD models or simulations.",
+    },
+    {
+        id: 6,
+        question: "Is all the work original?",
+        answer:
+            "100% yes. Every assignment is solved from scratch based on your instructions.",
+    },
+    {
+        id: 7,
+        question: "How do I submit my mechanical engineering homework?",
+        answer:
+            "Just upload your files and instructions on TutorHives.com. We’ll send a clear quote before starting.",
+    },
+    {
+        id: 8,
+        question: "What if I need changes to the solution?",
+        answer:
+            "Revisions matching your original instructions are free.",
+    },
+    {
+        id: 9,
+        question: "How is pricing determined?",
+        answer:
+            "It depends on complexity, length and deadline — but you always get a full, upfront price before we begin.",
+    },
+    {
+        id: 10,
+        question: "Will my information stay private?",
+        answer:
+            "Yes. Everything you share is confidential and securely handled.",
+    },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
         <>
+
             <Header />
+              <WhatsAppButton />
             <SubjectsHeroSection
-                title="Chemistry Homework Help – Accurate, Expert-Solved Assignments"
-                subtitle="Chemistry can be exciting—until the equations, reactions and calculations start piling up. When students feel stuck or pressed for time, getting clear, accurate help can make all the difference. TutorHives.com offers professional chemistry homework help by delivering fully solved assignments that are easy to understand and ready to submit. From basic concepts to advanced problem-solving, TutorHives makes chemistry feel manageable again."
+                title="Mechanical Engineering Homework Help – Expert, Accurate & Easy-to-Understand Solutions"
+                subtitle="Mechanical Engineering is one of the most exciting — and toughest — fields out there. Between long numerical problems, engineering diagrams, system modeling and theory-heavy questions, things can get overwhelming fast. When deadlines are tight or certain concepts just won’t click, the right support can save hours of frustration. TutorHives.com provides friendly, reliable mechanical engineering homework help with fully solved solutions that are easy to understand and ready to submit. Whether it’s thermodynamics, mechanics, design or simulation, TutorHives helps simplify the toughest tasks."
             />
-            <SubjectsAbout title="Why Students Look for Chemistry Homework Help?"
-                description="Chemistry is a subject that blends theory, math and deep understanding of how substances behave. That mix can be challenging, especially when deadlines are tight. Students often reach out because they:"
+            <SubjectsAbout
+                title="Why Students Look for Mechanical Engineering Homework Help"
+                description="Mechanical Engineering blends physics, math, design, problem-solving and technical reasoning. Students often reach out because they:"
                 bullets={[
-                    "Struggle with balancing equations or understanding reactions",
-                    "Find stoichiometry and thermochemistry confusing",
-                    "Have trouble applying formulas to multi-step problems",
-                    "Need help visualizing molecular structures or chemical bonding",
-                    "Are juggling multiple subjects at once",
+                    "Struggle with long numerical problems",
+                    "Find thermodynamics or fluid mechanics confusing",
+                    "Get stuck drawing or interpreting engineering diagrams",
+                    "Need help with machine design or manufacturing processes",
+                    "Don’t have time for complex multi-step solutions",
+                    "Face difficulty understanding dynamics or mechanical vibrations",
+                    "Need clean, correct solutions for simulation-based tasks",
                 ]}
-                shortDescription={`Searches like chem helper and chemistry hw help show how common it is for students to look for reliable, professional support. They don’t want generic guidance—they want clear, correct solutions that save time and reduce stress.`}
+                shortDescription={`Searches for mechanical engineering homework help have grown because students want reliable, easy-to-follow, step-by-step solutions, not vague explanations.`}
                 image="/images/signup.png"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+
             <SubjectsWhyChoose
                 title="Why TutorHives.com Is a Trusted Choice"
                 points={[
                     {
-                        heading: "Experts Who Know Chemistry Inside Out",
-                        text: "Your assignment is handled by experienced chemistry professionals who understand the subject and know how to break it down into simple, accurate steps.",
+                        heading: "Experts Who Know Mechanical Engineering Inside Out",
+                        text: "Assignments are solved by engineering professionals with real academic and practical experience. They break down complex problems into clear, logical steps.",
                     },
                     {
-                        heading: "Reliable, Clear, Student-Friendly Solutions",
-                        text: "Everything is solved neatly and accurately, with optional explanations so students can learn while reviewing the finished work.",
+                        heading: "Clean, Organized, Ready-to-Submit Solutions",
+                        text: "You get diagrams, formulas, explanations, calculations and reasoning — all formatted neatly to match your assignment’s requirements.",
                     },
                     {
-                        heading: "Straightforward and Honest",
-                        text: "No hidden charges. No reused solutions. No confusion. Just a simple process that puts the student first. Privacy and originality are guaranteed—every assignment is created from scratch.",
+                        heading: "Simple, Student-Friendly Experience",
+                        text: "No reused work. No hidden fees. No complicated process. Just original, private, tailored homework solutions.",
                     },
                 ]}
             />
-            <WhatsAppButton />
+
             <HowItWorksSubjectsSection
-                title="What Chemistry Homework Help Includes"
-                subtitle="We Solve a Wide Range of Chemistry Problems"
+                title="What TutorHives.com Helps With"
+                subtitle="We Solve a Wide Range of Mechanical Engineering Assignments"
                 points={[
-                    "TutorHives.com can handle almost any topic or difficulty level, including:",
-                    "Balancing equations and predicting products",
-                    "Stoichiometry, kinetics and thermodynamics",
-                    "Acid–base problems, pH/pOH calculations",
-                    "Redox reactions and electrochemistry",
-                    "Naming compounds, molecular geometry and bonding",
-                    "Organic chemistry basics and mechanisms",
-                    "Environmental and analytical chemistry tasks",
+                    "TutorHives supports both basic and advanced mech-eng topics, including:",
+                    "Engineering Mechanics (Statics & Dynamics)",
+                    "Thermodynamics & Heat Transfer",
+                    "Fluid Mechanics",
+                    "Machine Design & Manufacturing Processes",
+                    "Strength of Materials / Solid Mechanics",
+                    "Mechanical Vibrations",
+                    "Kinematics & Mechanisms",
+                    "Finite Element Analysis (FEA) basics",
+                    "CAD-related theory tasks (no full 3D modeling)",
+                    "Numerical problem solving & calculations",
+                    "Engineering drawings, diagrams and interpretations",
                 ]}
             />
+
             <WhyStudentsPrefer
                 title="What You Receive"
                 bullets={[
-                    "Fully solved homework/assignment",
-                    "Correct formulas and steps",
-                    "Clear structure and easy-to-follow answers",
-                    "Diagrams or chemical structures (if needed)",
-                    "Solutions tailored exactly to your instructions",
-                    "It’s a smooth blend of accuracy, clarity and convenience",
+                    "Fully solved assignments",
+                    "Step-by-step explanations",
+                    "Diagrams, sketches or data tables when required",
+                    "Correct formulas, units and reasoning",
+                    "Instructions followed exactly as provided",
+                    "TutorHives focuses on clarity, accuracy and making the work easy to understand",
                 ]}
             />
+
             <SubjectsStepsSection
                 title="How the Process Works"
-                subtitle="A Simple, Stress-Free 4-Step Flow"
+                subtitle="A Simple & Stress-Free 4-Step Flow"
                 bgColor="#FFF3B0"
                 steps={[
                     {
@@ -90,39 +166,41 @@ export default function AccountingHomeworkHelp() {
                     },
                     {
                         num: "2",
-                        title: "Receive a Quick Quote",
-                        desc: "Based on Complexity, Topic, Deadline.",
+                        title: "Receive a clear quote",
+                        desc: "Fair and transparent pricing",
                     },
                     {
                         num: "3",
-                        title: "Get Your Completed Solution",
-                        desc: "Clean, Accurate and Ready to Submit.",
+                        title: "Get your solved solution",
+                        desc: "Clean, accurate, and ready to submit",
                     },
                     {
                         num: "4",
-                        title: "Ask For Edits",
-                        desc: "if anything needs adjusting (within original scope).",
+                        title: "Request revisions if something needs adjustment",
+                        desc: "Included revisions to match your original instructions",
                     },
                 ]}
             />
-            <SubjectsWhatYouGet title="Why Students Love TutorHives"
+            <SubjectsWhatYouGet
+                title="Why Students Choose TutorHives"
                 bullets={[
-                    "Saves hours of stress and frustration",
-                    "Clear, correct answers that actually make sense",
-                    "Fast delivery, even for urgent homework",
-                    "Affordable pricing with no surprises",
-                    "Perfect for both school-level and college-level chemistry",
+                    "Saves hours on tough numerical tasks",
+                    "Makes complex engineering concepts easier",
+                    "Perfect for both school and college-level ME courses",
+                    "Fast turnaround for urgent homework",
+                    "No hidden fees, no confusion",
+                    "Explanations available upon request",
                 ]}
                 image="/images/Student-reviewing-solved-accounting-assignment.jpg"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
             <WriteMyPaper
                 title="Conclusion"
                 paragraphs={[
-                    "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
+                    "Mechanical Engineering doesn’t have to feel overwhelming. With TutorHives.com, students get clear, accurate and professionally solved assignments that make even difficult concepts feel manageable. If you're looking for dependable mechanical engineering homework help, TutorHives is here to make things easier. Upload your ME assignment today and get expert solutions delivered quickly and clearly.",
                 ]}
             />
-            <SubjectsFAQs/>
-
+            <SubjectsFAQs faqs={faqData} />
         </>
     );
 }

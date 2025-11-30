@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Chemistry Homework Help | TutorHives.com",
-  description:
-    "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
+    title: "Nursing Homework Help | TutorHives.com",
+    description:
+        "Get professionally solved nursing homework and assignments from TutorHives.com. Clear, accurate, and easy-to-understand solutions for nursing students.",
 };
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
@@ -14,114 +14,195 @@ import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+const faqData = [
+    {
+        id: 1,
+        question: "What types of nursing homework can you help with?",
+        answer:
+            "We handle care plans, case studies, pathophysiology tasks, pharmacology homework, evidence-based papers, medical calculations, ethics assignments and more.",
+    },
+    {
+        id: 2,
+        question: "Can you help if my assignment is due soon?",
+        answer:
+            "Yes! Nursing students often have tight schedules. If your deadline is realistic, we can finish it quickly.",
+    },
+    {
+        id: 3,
+        question: "Do you follow nursing formats like ADPIE or NANDA?",
+        answer:
+            "Yes. We can structure care plans, assessments and analysis using NANDA, NIC, NOC or your program’s preferred framework — as long as the assignment requires it.",
+    },
+    {
+        id: 4,
+        question: "Can you help with research papers and APA formatting?",
+        answer:
+            "Definitely. We can write, format and reference your paper according to APA (or any format your school uses).",
+    },
+    {
+        id: 5,
+        question: "Will the work be easy to understand?",
+        answer:
+            "Yes. Our goal is to make complex medical concepts simple, clear and student-friendly.",
+    },
+    {
+        id: 6,
+        question: "Are the solutions original?",
+        answer:
+            "100% original. Every assignment is created from scratch based on your instructions.",
+    },
+    {
+        id: 7,
+        question: "Can you help with medication dosage calculations?",
+        answer:
+            "Yes — we can solve and explain dosage, conversion and drip rate problems clearly.",
+    },
+    {
+        id: 8,
+        question: "What if my instructor wants changes?",
+        answer:
+            "Revisions that match your original instructions are free of charge.",
+    },
+    {
+        id: 9,
+        question: "How do you determine pricing?",
+        answer:
+            "Pricing depends on complexity, length and deadline — but you’ll always get an upfront quote before we begin.",
+    },
+    {
+        id: 10,
+        question: "Is my information private?",
+        answer:
+            "Absolutely. Everything you share stays confidential and secure.",
+    },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
         <>
             <Header />
-            <SubjectsHeroSection
-                title="Chemistry Homework Help – Accurate, Expert-Solved Assignments"
-                subtitle="Chemistry can be exciting—until the equations, reactions and calculations start piling up. When students feel stuck or pressed for time, getting clear, accurate help can make all the difference. TutorHives.com offers professional chemistry homework help by delivering fully solved assignments that are easy to understand and ready to submit. From basic concepts to advanced problem-solving, TutorHives makes chemistry feel manageable again."
+              <SubjectsHeroSection
+                title="Nursing Homework Help – Clear, Accurate & Professionally Solved Assignments"
+                subtitle="Nursing coursework can be incredibly rewarding — but also incredibly demanding. Between care plans, case studies, medical calculations, evidence-based writing and tight clinical schedules, it’s easy to feel stretched thin. When the workload becomes overwhelming, having reliable support can make a world of difference. TutorHives.com offers friendly, accurate nursing homework help with fully solved assignments written clearly, logically, and in line with academic standards. Whether it’s pathophysiology, pharmacology, or patient care analysis, TutorHives is here to lighten your load."
             />
-            <SubjectsAbout title="Why Students Look for Chemistry Homework Help?"
-                description="Chemistry is a subject that blends theory, math and deep understanding of how substances behave. That mix can be challenging, especially when deadlines are tight. Students often reach out because they:"
+              <WhatsAppButton />
+            <SubjectsAbout
+                title="Why Nursing Students Look for Homework Help"
+                description="Nursing students juggle a lot: studying, clinical rotations, skills practice, exams, and real-life responsibilities. It’s no surprise that they reach out when they:"
                 bullets={[
-                    "Struggle with balancing equations or understanding reactions",
-                    "Find stoichiometry and thermochemistry confusing",
-                    "Have trouble applying formulas to multi-step problems",
-                    "Need help visualizing molecular structures or chemical bonding",
-                    "Are juggling multiple subjects at once",
+                    "Struggle with creating nursing care plans",
+                    "Find it tough to interpret patient scenarios",
+                    "Need help writing evidence-based papers",
+                    "Get stuck on pathophysiology or pharmacology concepts",
+                    "Want support with APA formatting and academic writing",
+                    "Need help understanding diagnostic results or medication calculations",
+                    "Feel overwhelmed by large workloads and limited time",
                 ]}
-                shortDescription={`Searches like chem helper and chemistry hw help show how common it is for students to look for reliable, professional support. They don’t want generic guidance—they want clear, correct solutions that save time and reduce stress.`}
+                shortDescription={`Searches for nursing homework help keep rising because students want clear, accurate, professional solutions that support their learning — not vague pointers.`}
                 image="/images/signup.png"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+
             <SubjectsWhyChoose
                 title="Why TutorHives.com Is a Trusted Choice"
                 points={[
                     {
-                        heading: "Experts Who Know Chemistry Inside Out",
-                        text: "Your assignment is handled by experienced chemistry professionals who understand the subject and know how to break it down into simple, accurate steps.",
+                        heading: "Healthcare-Savvy Experts",
+                        text: "Your nursing assignments are handled by professionals who understand clinical reasoning, medical terminology, academic writing and the expectations of nursing programs.",
                     },
                     {
-                        heading: "Reliable, Clear, Student-Friendly Solutions",
-                        text: "Everything is solved neatly and accurately, with optional explanations so students can learn while reviewing the finished work.",
+                        heading: "Clear, Realistic, and Student-Friendly Solutions",
+                        text: "Every assignment is written in clean, simple language but still meets academic standards. Concepts are explained in a way that actually makes sense — no unnecessary jargon.",
                     },
                     {
-                        heading: "Straightforward and Honest",
-                        text: "No hidden charges. No reused solutions. No confusion. Just a simple process that puts the student first. Privacy and originality are guaranteed—every assignment is created from scratch.",
+                        heading: "Private, Honest, and Straightforward",
+                        text: "No reused content. No hidden fees. No complicated communication. Just original, confidential work tailored to your exact assignment.",
                     },
                 ]}
             />
-            <WhatsAppButton />
+
             <HowItWorksSubjectsSection
-                title="What Chemistry Homework Help Includes"
-                subtitle="We Solve a Wide Range of Chemistry Problems"
+                title="What TutorHives.com Helps With"
+                subtitle="We Solve a Wide Range of Nursing Assignments"
                 points={[
-                    "TutorHives.com can handle almost any topic or difficulty level, including:",
-                    "Balancing equations and predicting products",
-                    "Stoichiometry, kinetics and thermodynamics",
-                    "Acid–base problems, pH/pOH calculations",
-                    "Redox reactions and electrochemistry",
-                    "Naming compounds, molecular geometry and bonding",
-                    "Organic chemistry basics and mechanisms",
-                    "Environmental and analytical chemistry tasks",
+                    "TutorHives supports everything from basic foundations to upper-level nursing coursework, including:",
+                    "Nursing Care Plans (NCPs)",
+                    "Case Studies & Patient Assessments",
+                    "Pathophysiology Assignments",
+                    "Pharmacology Homework",
+                    "Clinical Decision-Making Tasks",
+                    "Evidence-Based Papers & Research Summaries",
+                    "Health Promotion & Public Health Assignments",
+                    "Medical Terminology Tasks",
+                    "Nursing Ethics & Legal Issues",
+                    "Medication Calculations",
+                    "Documentation & Charting Practice",
+                    "SOAP notes, ADPIE, SBAR tasks (explanatory only)",
                 ]}
             />
+
             <WhyStudentsPrefer
                 title="What You Receive"
                 bullets={[
-                    "Fully solved homework/assignment",
-                    "Correct formulas and steps",
-                    "Clear structure and easy-to-follow answers",
-                    "Diagrams or chemical structures (if needed)",
-                    "Solutions tailored exactly to your instructions",
-                    "It’s a smooth blend of accuracy, clarity and convenience",
+                    "Fully solved assignments",
+                    "Clear, well-written explanations",
+                    "Proper use of nursing frameworks (when required)",
+                    "APA-formatted references (if the assignment needs them)",
+                    "Accurate medical reasoning",
+                    "Work written in your chosen tone and academic level",
+                    "TutorHives delivers solutions that are both academically strong and easy to understand",
                 ]}
             />
+
             <SubjectsStepsSection
                 title="How the Process Works"
-                subtitle="A Simple, Stress-Free 4-Step Flow"
+                subtitle="Simple, Stress-Free 4-Step Process"
                 bgColor="#FFF3B0"
                 steps={[
                     {
                         num: "1",
-                        title: "Upload your assignment with instructions and deadline",
+                        title: "Upload your nursing assignment with instructions and deadlines",
                         desc: "Upload The Task, Requirements, Deadline",
                     },
                     {
                         num: "2",
-                        title: "Receive a Quick Quote",
-                        desc: "Based on Complexity, Topic, Deadline.",
+                        title: "Receive a clear quote before any work begins",
+                        desc: "Fair and transparent pricing",
                     },
                     {
                         num: "3",
-                        title: "Get Your Completed Solution",
-                        desc: "Clean, Accurate and Ready to Submit.",
+                        title: "Get your completed solution",
+                        desc: "Clean, accurate, and ready to submit",
                     },
                     {
                         num: "4",
-                        title: "Ask For Edits",
-                        desc: "if anything needs adjusting (within original scope).",
+                        title: "Request revisions if anything needs adjusting",
+                        desc: "Included revisions to match your original instructions",
                     },
                 ]}
             />
-            <SubjectsWhatYouGet title="Why Students Love TutorHives"
+
+            <SubjectsWhatYouGet
+                title="Why Nursing Students Choose TutorHives"
                 bullets={[
-                    "Saves hours of stress and frustration",
-                    "Clear, correct answers that actually make sense",
-                    "Fast delivery, even for urgent homework",
-                    "Affordable pricing with no surprises",
-                    "Perfect for both school-level and college-level chemistry",
+                    "Saves time during clinical rotations",
+                    "Provides clarity for complicated medical concepts",
+                    "Helps with both writing and clinical reasoning",
+                    "Works for all levels — from fundamentals to advanced courses",
+                    "Fast turnaround for urgent assignments",
+                    "Fair pricing with no surprises",
                 ]}
                 image="/images/Student-reviewing-solved-accounting-assignment.jpg"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
             <WriteMyPaper
                 title="Conclusion"
                 paragraphs={[
-                    "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
+                    "Nursing school is tough — but you don’t have to face it alone. With TutorHives.com, you get professionally written, fully solved nursing assignments that make studying easier and reduce stress. Whether it’s a complex case study or a full care plan, TutorHives is ready to help you succeed. Upload your nursing homework today and get expert solutions delivered with clarity and care.",
                 ]}
             />
-            <SubjectsFAQs/>
+            <SubjectsFAQs faqs={faqData} />
 
         </>
     );

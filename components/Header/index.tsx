@@ -73,13 +73,14 @@ const Header = () => {
               <li key={menuItem.id} className="relative group">
                 {menuItem.submenu ? (
                   <>
-                    {/* ✅ Clickable parent + Dropdown toggle */}
                     <div className="flex items-center gap-2">
                       <Link
-                        href={menuItem.path || "#"}
+                        href={menuItem.path || pathUrl} // stays on same page if no real link
+                        onClick={() => {
+                          closeMobileMenu();
+                        }}
                         className={`tracking-wide text-black ${pathUrl === menuItem.path ? "text-[#000000]" : ""
                           }`}
-                        onClick={closeMobileMenu} // ✅
                       >
                         {menuItem.title}
                       </Link>
@@ -119,8 +120,8 @@ const Header = () => {
                                 {subItem.title}
                                 <svg
                                   className={`ml-2 h-3 w-3 fill-current transition-transform duration-200 xl:hidden ${openChildMenu === subItem.id
-                                      ? "rotate-90"
-                                      : ""
+                                    ? "rotate-90"
+                                    : ""
                                     }`}
                                   viewBox="0 0 512 512"
                                 >
@@ -131,8 +132,8 @@ const Header = () => {
                               {/* Child menu */}
                               <ul
                                 className={`xl:absolute xl:left-52 xl:top-0 xl:min-w-[220px] max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-transparent xl:bg-[rgba(255,255,255,0.95)] xl:p-3 xl:shadow-lg xl:opacity-0 xl:invisible xl:group-hover/sub:visible xl:group-hover/sub:opacity-100 xl:transition-all xl:duration-200 ${openChildMenu === subItem.id
-                                    ? "block"
-                                    : "hidden xl:block"
+                                  ? "block"
+                                  : "hidden xl:block"
                                   }`}
                               >
                                 {subItem.submenu.map((child) => (

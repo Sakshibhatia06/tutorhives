@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Chemistry Homework Help | TutorHives.com",
-  description:
-    "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
+    title: "Electrical Engineering Homework Help | TutorHives.com",
+    description:
+        "Get expert-solved electrical engineering homework and assignments from TutorHives.com. Clear, accurate, and ready-to-submit solutions for students.",
 };
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
@@ -14,68 +14,130 @@ import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+const faqData = [
+    {
+        id: 1,
+        question: "What types of electrical engineering homework do you solve?",
+        answer:
+            "Almost everything—circuits, power systems, controls, electronics, digital logic, electromagnetics, MATLAB problems, and more. If it’s part of an EE course, we can help.",
+    },
+    {
+        id: 2,
+        question: "Can you help with urgent assignments?",
+        answer:
+            "Yes. Many students contact us right before a deadline. If the task is doable in the timeframe, we’ll get it done quickly.",
+    },
+    {
+        id: 3,
+        question: "Who completes the assignments?",
+        answer:
+            "Electrical engineering specialists who understand the subject and know how to explain solutions in a clear, simple way.",
+    },
+    {
+        id: 4,
+        question: "Will I get step-by-step explanations?",
+        answer:
+            "If you request them, yes. We can include formulas, diagrams, reasoning, and step-by-step breakdowns.",
+    },
+    {
+        id: 5,
+        question: "Is the work original?",
+        answer:
+            "Absolutely. Every assignment is solved from scratch based on your instructions. Nothing is copied.",
+    },
+    {
+        id: 6,
+        question: "How do I submit my homework?",
+        answer:
+            "Just upload your files on TutorHives.com with your instructions. You’ll receive a quote before we begin.",
+    },
+    {
+        id: 7,
+        question: "What if I need changes?",
+        answer:
+            "Revisions related to your original instructions are free. Just let us know what needs adjusting.",
+    },
+    {
+        id: 8,
+        question: "How are prices determined?",
+        answer:
+            "Pricing depends on complexity, length and urgency. You always get the full price upfront—no hidden fees.",
+    },
+    {
+        id: 9,
+        question: "Will my information stay private?",
+        answer:
+            "Yes. Everything you share is fully confidential and secure.",
+    },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
         <>
             <Header />
             <SubjectsHeroSection
-                title="Chemistry Homework Help – Accurate, Expert-Solved Assignments"
-                subtitle="Chemistry can be exciting—until the equations, reactions and calculations start piling up. When students feel stuck or pressed for time, getting clear, accurate help can make all the difference. TutorHives.com offers professional chemistry homework help by delivering fully solved assignments that are easy to understand and ready to submit. From basic concepts to advanced problem-solving, TutorHives makes chemistry feel manageable again."
+                title="Electrical Engineering Homework Help – Accurate, Expert-Solved Assignments"
+                subtitle="Electrical Engineering is an exciting field—but the problem sets, circuit diagrams and calculations can quickly become overwhelming. When students feel stuck or pressed for time, getting the right kind of help can make all the difference. TutorHives.com offers friendly, reliable electrical engineering homework help by delivering fully solved assignments that are easy to understand and ready to submit. From circuits to power systems, TutorHives makes challenging EE topics feel manageable again."
             />
-            <SubjectsAbout title="Why Students Look for Chemistry Homework Help?"
-                description="Chemistry is a subject that blends theory, math and deep understanding of how substances behave. That mix can be challenging, especially when deadlines are tight. Students often reach out because they:"
+            <SubjectsAbout title="Why Students Look for Electrical Engineering Homework Help"
+                description="Electrical engineering blends physics, math, logic and problem-solving. That’s a lot to juggle—especially with tight deadlines. Students often reach out because they:"
                 bullets={[
-                    "Struggle with balancing equations or understanding reactions",
-                    "Find stoichiometry and thermochemistry confusing",
-                    "Have trouble applying formulas to multi-step problems",
-                    "Need help visualizing molecular structures or chemical bonding",
-                    "Are juggling multiple subjects at once",
+                    "struggle with circuit analysis and electrical measurements",
+                    "find signal processing or digital logic challenging",
+                    "get stuck on power system calculations",
+                    "feel lost with electromagnetics and field theory",
+                    "are overwhelmed with large numerical problems and MATLAB-based tasks",
+                    "don’t have enough time to complete complex problem sets",
                 ]}
-                shortDescription={`Searches like chem helper and chemistry hw help show how common it is for students to look for reliable, professional support. They don’t want generic guidance—they want clear, correct solutions that save time and reduce stress.`}
+                shortDescription={`Searches for electrical engineering homework help have grown steadily because students don’t just want hints—they want clear, correct solutions they can trust.`}
                 image="/images/signup.png"
                 darkImage="/images/about/about-dark-01.png" />
             <SubjectsWhyChoose
                 title="Why TutorHives.com Is a Trusted Choice"
                 points={[
                     {
-                        heading: "Experts Who Know Chemistry Inside Out",
-                        text: "Your assignment is handled by experienced chemistry professionals who understand the subject and know how to break it down into simple, accurate steps.",
+                        heading: "Real EE Experts Who Make Concepts Clear",
+                        text: "Your assignment isn’t handled by a general tutor—it's solved by someone who understands electrical engineering deeply and can break down solutions in a simple, logical way.",
                     },
                     {
-                        heading: "Reliable, Clear, Student-Friendly Solutions",
-                        text: "Everything is solved neatly and accurately, with optional explanations so students can learn while reviewing the finished work.",
+                        heading: "Reliable, Clean, and Instruction-Focused Solutions",
+                        text: "Every answer is well-organized, accurate, and aligned with your instructions. Need explanations? They’re written in a friendly, easy-to-understand tone.",
                     },
                     {
-                        heading: "Straightforward and Honest",
-                        text: "No hidden charges. No reused solutions. No confusion. Just a simple process that puts the student first. Privacy and originality are guaranteed—every assignment is created from scratch.",
+                        heading: "Honest, Student-Friendly Service",
+                        text: "No hidden fees. No reused content. No complicated process. Everything is original, private, and tailored to your task.",
                     },
                 ]}
             />
             <WhatsAppButton />
             <HowItWorksSubjectsSection
-                title="What Chemistry Homework Help Includes"
-                subtitle="We Solve a Wide Range of Chemistry Problems"
-                points={[
-                    "TutorHives.com can handle almost any topic or difficulty level, including:",
-                    "Balancing equations and predicting products",
-                    "Stoichiometry, kinetics and thermodynamics",
-                    "Acid–base problems, pH/pOH calculations",
-                    "Redox reactions and electrochemistry",
-                    "Naming compounds, molecular geometry and bonding",
-                    "Organic chemistry basics and mechanisms",
-                    "Environmental and analytical chemistry tasks",
+                title="What TutorHives.com Helps With"
+                subtitle="We Solve a Wide Range of Electrical Engineering Tasks"
+                bullets={[
+                    "TutorHives handles assignments across multiple EE domains, including:",
+                    "Circuit Theory & Network Analysis",
+                    "Electrical Machines & Power Systems",
+                    "Control Systems & Automation",
+                    "Signal Processing & Communications",
+                    "Digital Logic & Microcontrollers",
+                    "Electromagnetics (EMF, fields, waves)",
+                    "Electronics (analog & digital)",
+                    "Power Electronics & Converters",
+                    "Transformers, motors & generators",
+                    "MATLAB, Simulink and numerical EE problems",
                 ]}
             />
             <WhyStudentsPrefer
-                title="What You Receive"
-                bullets={[
-                    "Fully solved homework/assignment",
-                    "Correct formulas and steps",
-                    "Clear structure and easy-to-follow answers",
-                    "Diagrams or chemical structures (if needed)",
-                    "Solutions tailored exactly to your instructions",
-                    "It’s a smooth blend of accuracy, clarity and convenience",
+                title="You Receive Clear, Ready-to-Submit Work"
+                points={[
+                    "Your final solution includes:",
+                    "Fully solved numerical problems",
+                    "Neatly drawn diagrams and labeled circuit illustrations",
+                    "Step-by-step explanations (optional)",
+                    "Formulas, reasoning and correct units",
+                    "Proper formatting based on instructions",
+                    "The focus is on clarity, accuracy and making your life easier.",
                 ]}
             />
             <SubjectsStepsSection
@@ -85,44 +147,45 @@ export default function AccountingHomeworkHelp() {
                 steps={[
                     {
                         num: "1",
-                        title: "Upload your assignment with instructions and deadline",
-                        desc: "Upload The Task, Requirements, Deadline",
+                        title: "Upload your homework ",
+                        desc: "with all instructions and deadlines.",
                     },
                     {
                         num: "2",
-                        title: "Receive a Quick Quote",
-                        desc: "Based on Complexity, Topic, Deadline.",
+                        title: "Get your quote",
+                        desc: "no hidden fees, no surprises.",
                     },
                     {
                         num: "3",
-                        title: "Get Your Completed Solution",
-                        desc: "Clean, Accurate and Ready to Submit.",
+                        title: "Receive your completed solution",
+                        desc: "organized, accurate and polished.",
                     },
                     {
                         num: "4",
-                        title: "Ask For Edits",
-                        desc: "if anything needs adjusting (within original scope).",
+                        title: "Request revisions ",
+                        desc: "if anything needs adjustment (included).",
                     },
                 ]}
             />
-            <SubjectsWhatYouGet title="Why Students Love TutorHives"
+            <SubjectsWhatYouGet title="Why Students Choose TutorHives"
                 bullets={[
-                    "Saves hours of stress and frustration",
-                    "Clear, correct answers that actually make sense",
-                    "Fast delivery, even for urgent homework",
-                    "Affordable pricing with no surprises",
-                    "Perfect for both school-level and college-level chemistry",
+                    "Saves time during busy academic weeks",
+                    "Provides clear explanations that make learning easier",
+                    "Handles tough calculations and diagram-heavy tasks",
+                    "Perfect for school, college and advanced EE courses",
+                    "Transparent pricing with no surprises",
+                    "Fast turnaround for urgent homework",
+
                 ]}
                 image="/images/Student-reviewing-solved-accounting-assignment.jpg"
                 darkImage="/images/about/about-dark-01.png" />
             <WriteMyPaper
                 title="Conclusion"
                 paragraphs={[
-                    "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
+                    "Electrical engineering doesn’t have to feel overwhelming. With TutorHives.com, students get accurate, professionally solved assignments that simplify complex concepts and help them stay on track. If you need dependable electrical engineering homework help, TutorHives is here to make the process smooth and stress-free. Upload your EE assignment today and get expert help without the hassle."
                 ]}
             />
-            <SubjectsFAQs/>
-
+            <SubjectsFAQs faqs={faqData} />
         </>
     );
 }

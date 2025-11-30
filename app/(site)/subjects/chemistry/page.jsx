@@ -3,6 +3,7 @@ export const metadata = {
   description:
     "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
 };
+
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
 import Header from "@/components/Header";
@@ -14,6 +15,64 @@ import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+
+const faqData = [
+  {
+    id: 1,
+    question: "What kind of chemistry homework can TutorHives solve?",
+    answer:
+      "Almost anything. Whether it’s balancing equations, stoichiometry, organic chemistry basics or more advanced physical chemistry problems, TutorHives provides fully solved, accurate answers.",
+  },
+  {
+    id: 2,
+    question: "Can you help if my deadline is soon?",
+    answer:
+      "Yes. Many students come to TutorHives with urgent homework. As long as the task is manageable within the timeframe, it can be delivered quickly.",
+  },
+  {
+    id: 3,
+    question: "Who actually solves the assignments?",
+    answer:
+      "Your homework is completed by chemistry specialists who know the subject well and understand how to present answers clearly and correctly.",
+  },
+  {
+    id: 4,
+    question: "Will I get step-by-step explanations?",
+    answer:
+      "If you’d like them, yes. You can request detailed steps showing formulas, reasoning and the logic behind each answer.",
+  },
+  {
+    id: 5,
+    question: "Is everything original?",
+    answer:
+      "Absolutely. Every assignment is solved from scratch. Nothing is copied or reused.",
+  },
+   {
+    id: 6,
+    question: "How do I send my assignment?",
+    answer:
+      "Just upload your files and instructions on TutorHives.com. You’ll get a quote before any work begins.",
+  },
+   {
+    id: 7,
+    question: "What if something needs fixing?",
+    answer:
+      "Revisions are included. If something doesn’t match your instructions, the expert will adjust it.",
+  },
+   {
+    id: 8,
+    question: "How do you decide the price?",
+    answer:
+      "Pricing depends on how complex the task is and how soon you need it. Everything is shared upfront—no hidden charges.",
+  },
+  {
+    id: 9,
+    question: "Is my information kept private?",
+    answer:
+      "Yes. Your assignments, details and conversations are always kept confidential",
+  },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
@@ -121,7 +180,7 @@ export default function AccountingHomeworkHelp() {
                     "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
                 ]}
             />
-            <SubjectsFAQs/>
+            <SubjectsFAQs faqs={faqData}/>
 
         </>
     );

@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Chemistry Homework Help | TutorHives.com",
-  description:
-    "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
+    title: "Physics Homework Help | TutorHives.com",
+    description:
+        "Get expert-solved physics homework and assignment solutions from TutorHives.com. Clear, accurate, and easy to understand for all levels.",
 };
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
@@ -14,115 +14,187 @@ import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+const faqData = [
+    {
+        id: 1,
+        question: "What types of physics homework can you solve?",
+        answer:
+            "We cover mechanics, electricity, magnetism, thermodynamics, optics, waves, modern physics, fluid mechanics and more.",
+    },
+    {
+        id: 2,
+        question: "Can you explain the steps behind each solution?",
+        answer:
+            "Yes! If you want step-by-step explanations, we’ll include clear reasoning, formulas, and diagrams to help you understand how the answer is reached.",
+    },
+    {
+        id: 3,
+        question: "Do you help with physics diagrams, graphs or vector drawings?",
+        answer:
+            "Absolutely. We can create neat, clear visuals like force diagrams, ray diagrams, vector breakdowns, graphs, and more.",
+    },
+    {
+        id: 4,
+        question: "Can you help with urgent physics assignments?",
+        answer:
+            "Yes. We frequently handle urgent tasks — as long as the deadline is realistic, we’ll work quickly.",
+    },
+    {
+        id: 5,
+        question: "Will the solutions be original?",
+        answer:
+            "Yes. Every problem is solved from scratch based on your instructions. Nothing is copied or reused.",
+    },
+    {
+        id: 6,
+        question: "How do I upload my assignment?",
+        answer:
+            "Just upload your questions and instructions on TutorHives.com. You’ll receive a clear quote before we begin.",
+    },
+    {
+        id: 7,
+        question: "What if I need revisions?",
+        answer:
+            "Revisions matching your original instructions are free.",
+    },
+    {
+        id: 8,
+        question: "How do you determine the cost?",
+        answer:
+            "Pricing depends on difficulty, length and deadline — but we always give an upfront price with no hidden fees.",
+    },
+    {
+        id: 9,
+        question: "Is my information kept private?",
+        answer:
+            "Yes. Your files and personal details are kept confidential and secure.",
+    },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
         <>
             <Header />
             <SubjectsHeroSection
-                title="Chemistry Homework Help – Accurate, Expert-Solved Assignments"
-                subtitle="Chemistry can be exciting—until the equations, reactions and calculations start piling up. When students feel stuck or pressed for time, getting clear, accurate help can make all the difference. TutorHives.com offers professional chemistry homework help by delivering fully solved assignments that are easy to understand and ready to submit. From basic concepts to advanced problem-solving, TutorHives makes chemistry feel manageable again."
+                title="Physics Homework Help – Clear, Accurate & Expert-Solved Assignments"
+                subtitle="Physics is fascinating… until the equations, diagrams, and concepts start piling up. When your assignments require more time or clarity than you have, getting the right support can make all the difference. TutorHives.com offers friendly, reliable physics homework help with fully solved answers that are easy to understand and ready to submit. From mechanics and electricity to modern physics, we make tough topics feel manageable again."
             />
-            <SubjectsAbout title="Why Students Look for Chemistry Homework Help?"
-                description="Chemistry is a subject that blends theory, math and deep understanding of how substances behave. That mix can be challenging, especially when deadlines are tight. Students often reach out because they:"
+              <WhatsAppButton />
+            <SubjectsAbout
+                title="Why Students Look for Physics Homework Help"
+                description="Physics blends math, logic, real-world reasoning, and detailed calculations — all at once. Many students reach out because they:"
                 bullets={[
-                    "Struggle with balancing equations or understanding reactions",
-                    "Find stoichiometry and thermochemistry confusing",
-                    "Have trouble applying formulas to multi-step problems",
-                    "Need help visualizing molecular structures or chemical bonding",
-                    "Are juggling multiple subjects at once",
+                    "Get stuck on multi-step numerical problems",
+                    "Struggle with forces, motion, or energy concepts",
+                    "Find electricity, magnetism or circuits confusing",
+                    "Need help drawing or interpreting diagrams and graphs",
+                    "Feel overwhelmed by formula-heavy chapters",
+                    "Don’t have enough time for long problem sets",
+                    "Want clear, step-by-step explanations to learn from",
                 ]}
-                shortDescription={`Searches like chem helper and chemistry hw help show how common it is for students to look for reliable, professional support. They don’t want generic guidance—they want clear, correct solutions that save time and reduce stress.`}
+                shortDescription={`It’s no surprise that searches for physics homework help continue to grow — students want clear, correct, step-by-step solutions, not vague hints.`}
                 image="/images/signup.png"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+
             <SubjectsWhyChoose
                 title="Why TutorHives.com Is a Trusted Choice"
                 points={[
                     {
-                        heading: "Experts Who Know Chemistry Inside Out",
-                        text: "Your assignment is handled by experienced chemistry professionals who understand the subject and know how to break it down into simple, accurate steps.",
+                        heading: "Experienced Physics Problem-Solvers",
+                        text: "Your assignments are handled by experts who know physics inside out and can explain even complex ideas in a simple, friendly way.",
                     },
                     {
-                        heading: "Reliable, Clear, Student-Friendly Solutions",
-                        text: "Everything is solved neatly and accurately, with optional explanations so students can learn while reviewing the finished work.",
+                        heading: "Neat, Organized, Ready-to-Submit Solutions",
+                        text: "Expect clean calculations, labeled diagrams, correct formulas, and explanations that make sense.",
                     },
                     {
-                        heading: "Straightforward and Honest",
-                        text: "No hidden charges. No reused solutions. No confusion. Just a simple process that puts the student first. Privacy and originality are guaranteed—every assignment is created from scratch.",
+                        heading: "A Simple, Honest, Student-Friendly Approach",
+                        text: "No copied answers. No hidden fees. No confusing process. Everything is original, private, and tailored specifically for your assignment.",
                     },
                 ]}
             />
-            <WhatsAppButton />
+
             <HowItWorksSubjectsSection
-                title="What Chemistry Homework Help Includes"
-                subtitle="We Solve a Wide Range of Chemistry Problems"
+                title="What TutorHives.com Helps With"
+                subtitle="We Solve a Wide Range of Physics Assignments"
                 points={[
-                    "TutorHives.com can handle almost any topic or difficulty level, including:",
-                    "Balancing equations and predicting products",
-                    "Stoichiometry, kinetics and thermodynamics",
-                    "Acid–base problems, pH/pOH calculations",
-                    "Redox reactions and electrochemistry",
-                    "Naming compounds, molecular geometry and bonding",
-                    "Organic chemistry basics and mechanisms",
-                    "Environmental and analytical chemistry tasks",
+                    "Mechanics (motion, forces, energy, momentum)",
+                    "Electricity & Magnetism (circuits, fields, charges)",
+                    "Waves & Oscillations",
+                    "Optics & Light",
+                    "Thermodynamics",
+                    "Modern Physics (quantum basics, relativity basics)",
+                    "Rotational Motion & Torque",
+                    "Fluid Mechanics",
+                    "Graphing, diagrams, and interpretation tasks",
+                    "Vector problems & trigonometric physics",
+                    "Heat, work, and thermodynamic processes",
                 ]}
             />
+
             <WhyStudentsPrefer
                 title="What You Receive"
                 bullets={[
-                    "Fully solved homework/assignment",
-                    "Correct formulas and steps",
-                    "Clear structure and easy-to-follow answers",
-                    "Diagrams or chemical structures (if needed)",
-                    "Solutions tailored exactly to your instructions",
-                    "It’s a smooth blend of accuracy, clarity and convenience",
+                    "Fully solved physics problems",
+                    "Clean step-by-step explanations",
+                    "Correct formulas, units, and reasoning",
+                    "Diagrams, sketches, graphs where needed",
+                    "Solutions tailored to your exact instructions",
+                    "We make sure your work is both correct and easy to understand",
                 ]}
             />
+
             <SubjectsStepsSection
                 title="How the Process Works"
-                subtitle="A Simple, Stress-Free 4-Step Flow"
+                subtitle="Simple, Stress-Free 4-Step Process"
                 bgColor="#FFF3B0"
                 steps={[
                     {
                         num: "1",
-                        title: "Upload your assignment with instructions and deadline",
+                        title: "Upload your physics assignment with instructions and deadline",
                         desc: "Upload The Task, Requirements, Deadline",
                     },
                     {
                         num: "2",
-                        title: "Receive a Quick Quote",
-                        desc: "Based on Complexity, Topic, Deadline.",
+                        title: "Receive a clear quote before any work begins",
+                        desc: "Fair and transparent pricing",
                     },
                     {
                         num: "3",
-                        title: "Get Your Completed Solution",
-                        desc: "Clean, Accurate and Ready to Submit.",
+                        title: "Get your completed solution",
+                        desc: "Polished, accurate, and ready to submit",
                     },
                     {
                         num: "4",
-                        title: "Ask For Edits",
-                        desc: "if anything needs adjusting (within original scope).",
+                        title: "Request revisions if anything needs adjusting",
+                        desc: "Free revisions included to match your original instructions",
                     },
                 ]}
             />
-            <SubjectsWhatYouGet title="Why Students Love TutorHives"
+
+            <SubjectsWhatYouGet
+                title="Why Students Choose TutorHives"
                 bullets={[
-                    "Saves hours of stress and frustration",
-                    "Clear, correct answers that actually make sense",
-                    "Fast delivery, even for urgent homework",
-                    "Affordable pricing with no surprises",
-                    "Perfect for both school-level and college-level chemistry",
+                    "Saves time on long physics problem sets",
+                    "Makes confusing concepts easier to understand",
+                    "Works for all physics levels (school, college, advanced)",
+                    "Fast turnaround for urgent assignments",
+                    "No hidden fees — just simple, honest help",
                 ]}
                 image="/images/Student-reviewing-solved-accounting-assignment.jpg"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+
             <WriteMyPaper
                 title="Conclusion"
                 paragraphs={[
-                    "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
+                    "Physics doesn’t have to feel confusing or overwhelming. With TutorHives.com, you get clear, accurate, step-by-step solutions that make tough concepts easier and homework stress-free. If you're looking for dependable physics homework help, TutorHives is ready to support you. Upload your physics assignment today and get expert help delivered quickly and clearly.",
                 ]}
             />
-            <SubjectsFAQs/>
 
+            <SubjectsFAQs faqs={faqData} />
         </>
     );
 }

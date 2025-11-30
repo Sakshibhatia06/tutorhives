@@ -1,128 +1,119 @@
 export const metadata = {
-  title: "Chemistry Homework Help | TutorHives.com",
+  title: "How to Get Computer Science Homework Help | Tutorhives",
   description:
-    "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
+    "Stuck on your computer science homework? Learn effective strategies for homework help, smart tutoring, and assignment success with Tutorhives.",
 };
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/Floating-Whatsapp/whatsAppButton";
 import SubjectsWhyChoose from "@/components/SubjectsWhyChoose";
-import SubjectsStepsSection from "@/components/SubjectsStepsSection";
-import SubjectsWhatYouGet from "@/components/SubjectsWhatYouGet";
 import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+const faqData = [
+  {
+    id: 1,
+    question: "Is it okay to pay someone to do my computer science homework?",
+    answer:
+      "It depends on your institution’s policy. While help platforms exist, you should use them to learn—not just submit someone else’s work.",
+  },
+  {
+    id: 2,
+    question: "How do I choose between tutoring vs full homework solutions?",
+    answer:
+      "If you’re stuck conceptually, go for tutoring. If you’re simply short on time and need help finishing, a solution-service may seem attractive—but it may affect your learning.",
+  },
+  {
+    id: 3,
+    question: "What topics often need the most homework help in computer science?",
+    answer:
+      "Data structures & algorithms, operating systems, computer networks, database design, and programming languages.",
+  },
+  {
+    id: 4,
+    question: "How soon should I get help before a deadline?",
+    answer:
+      "As soon as you’re stuck. Ideally 2–3 days before the deadline so you have time to review and understand the solution and understand it.",
+  },
+  {
+    id: 5,
+    question: "How can I track my progress so I need less help over time?",
+    answer:
+      "Keep a log of topics you struggled with, note the help you received, and track future assignments to see if you're applying what you learned. Over time, you'll depend less on external help.",
+  },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
         <>
             <Header />
             <SubjectsHeroSection
-                title="Chemistry Homework Help – Accurate, Expert-Solved Assignments"
-                subtitle="Chemistry can be exciting—until the equations, reactions and calculations start piling up. When students feel stuck or pressed for time, getting clear, accurate help can make all the difference. TutorHives.com offers professional chemistry homework help by delivering fully solved assignments that are easy to understand and ready to submit. From basic concepts to advanced problem-solving, TutorHives makes chemistry feel manageable again."
+                title="How to Get the Best Computer Science Homework Help (Without Sacrificing Learning)"
+                subtitle="Stuck on your computer science homework? Learn effective strategies for homework help, smart tutoring, and assignment success with Tutorhives."
             />
-            <SubjectsAbout title="Why Students Look for Chemistry Homework Help?"
-                description="Chemistry is a subject that blends theory, math and deep understanding of how substances behave. That mix can be challenging, especially when deadlines are tight. Students often reach out because they:"
+            <SubjectsAbout title="Why Computer Science Homework Feels So Tough?"
+                description="Feeling overwhelmed with homework in a computer science course? You're not alone. Starting with the basics all the way to advanced areas such as data structures and algorithms, operating systems, and networking, it's very easy to feel stuck. In this guide, you'll learn just how to get effective computer science homework help-without just handing over your work. Whether you're looking for assignment support, tutoring, or ways to learn smarter, this article will walk you through some proven strategies to boost your grades and enhance your understanding."
                 bullets={[
-                    "Struggle with balancing equations or understanding reactions",
-                    "Find stoichiometry and thermochemistry confusing",
-                    "Have trouble applying formulas to multi-step problems",
-                    "Need help visualizing molecular structures or chemical bonding",
-                    "Are juggling multiple subjects at once",
+                    "This is a very wide discipline, ranging from the most theoretical issues, such as automata and complexity, to very practical ones, such as coding.",
+                    "Typical pitfalls: syntax of unfamiliar programming languages, debugging, Big-O notation, incomplete descriptions of problems.",
+                    "How the pace of coursework, part-time work, and other commitments add pressure.",
+                    "In practice, one student I worked with consistently was late with his work until we changed his approach to problems: breaking them down into smaller steps and using targeted help.",
                 ]}
-                shortDescription={`Searches like chem helper and chemistry hw help show how common it is for students to look for reliable, professional support. They don’t want generic guidance—they want clear, correct solutions that save time and reduce stress.`}
+                shortDescription={``}
                 image="/images/signup.png"
                 darkImage="/images/about/about-dark-01.png" />
             <SubjectsWhyChoose
-                title="Why TutorHives.com Is a Trusted Choice"
+                title="Smart Ways to Get Homework Help (and Learn in the Process)"
                 points={[
                     {
-                        heading: "Experts Who Know Chemistry Inside Out",
-                        text: "Your assignment is handled by experienced chemistry professionals who understand the subject and know how to break it down into simple, accurate steps.",
+                        heading: "Set yourself up before seeking help",
+                        text: "Read the assignment fully and list what you do understand vs what you don’t. Try a mini-attempt (even if unsuccessful) so when you ask for help you have a specific question.",
                     },
                     {
-                        heading: "Reliable, Clear, Student-Friendly Solutions",
-                        text: "Everything is solved neatly and accurately, with optional explanations so students can learn while reviewing the finished work.",
+                        heading: "Select the Right Type of Assistance",
+                        text: "Tutoring/Guidance: Explains the concept behind the solution so that you can learn to solve similar problems in the future. Homework-help services: may complete the assignment for you—but you risk not learning, and in academic settings this can be problematic. For example, platforms advertise “24/7 help with data structures & algorithms homework.”",
                     },
                     {
-                        heading: "Straightforward and Honest",
-                        text: "No hidden charges. No reused solutions. No confusion. Just a simple process that puts the student first. Privacy and originality are guaranteed—every assignment is created from scratch.",
+                        heading: "Use help effectively",
+                        text: "When you engage a tutor, provide your code or assignment statement and say: “I got stuck here, I tried this, can you show me the next step?” Ask for explanation of why something works (not just how). Save the chat/notes so you can review later—this builds your knowledge.",
+                    },
+                    {
+                        heading: "Avoid to avoid",
+                        text: "Don’t copy solutions without understanding; it’s against learning and is usually against academic honesty policies. Don't wait until 1 hr is left for the deadline; by that time, even a tutor can't give full value. Do not depend on help for every single assignment; instead, try to improve gradually to become independent.",
                     },
                 ]}
             />
             <WhatsAppButton />
             <HowItWorksSubjectsSection
-                title="What Chemistry Homework Help Includes"
-                subtitle="We Solve a Wide Range of Chemistry Problems"
+                title="How Tutorhives Helps"
+                subtitle="We Solve a Wide Range of Computer Science Problems"
                 points={[
-                    "TutorHives.com can handle almost any topic or difficulty level, including:",
-                    "Balancing equations and predicting products",
-                    "Stoichiometry, kinetics and thermodynamics",
-                    "Acid–base problems, pH/pOH calculations",
-                    "Redox reactions and electrochemistry",
-                    "Naming compounds, molecular geometry and bonding",
-                    "Organic chemistry basics and mechanisms",
-                    "Environmental and analytical chemistry tasks",
+                    "Computer science homework and assignment support, particularly for Indian and international university students who struggle to manage a heavy workload, is our specialty at Tutorhives.",
+                    "What sets us apart: expert mentors with a CS degree, focused topics like algorithms, OS, networking, coding in C/C++/Java; 24/7 availability for your time zone.",
+                    "Real‐world example: A student in Delhi took help with his networking homework, reviewed the explanation, and next term scored higher while completing his assignments independently.",
+                    "Call-to-action: If you’re stuck, fill the brief form and we’ll pair you with a mentor who can walk you through your assignment step by step.",
                 ]}
             />
             <WhyStudentsPrefer
-                title="What You Receive"
+                title="Long-Term Strategies for Mastery (so you need less help)"
                 bullets={[
-                    "Fully solved homework/assignment",
-                    "Correct formulas and steps",
-                    "Clear structure and easy-to-follow answers",
-                    "Diagrams or chemical structures (if needed)",
-                    "Solutions tailored exactly to your instructions",
-                    "It’s a smooth blend of accuracy, clarity and convenience",
+                    "Regular revision: Devote 30 minutes every week to the revision of older topics so that they do not pile up.",
+                    "Practice problems: Sites like online judges help reinforce algorithms & data structures",
+                    "Build tiny projects: Apply what you learn—e.g., create a small game, a network chat app, a mini compiler. That’s how you turn homework into experience.",
+                    "Peer study / group sessions: Teaching a peer is one of the best ways to learn.",
+                    "Set realistic goals: Instead of “get perfect this semester” set “understand recursion & dynamic programming by week 5”.",
                 ]}
             />
-            <SubjectsStepsSection
-                title="How the Process Works"
-                subtitle="A Simple, Stress-Free 4-Step Flow"
-                bgColor="#FFF3B0"
-                steps={[
-                    {
-                        num: "1",
-                        title: "Upload your assignment with instructions and deadline",
-                        desc: "Upload The Task, Requirements, Deadline",
-                    },
-                    {
-                        num: "2",
-                        title: "Receive a Quick Quote",
-                        desc: "Based on Complexity, Topic, Deadline.",
-                    },
-                    {
-                        num: "3",
-                        title: "Get Your Completed Solution",
-                        desc: "Clean, Accurate and Ready to Submit.",
-                    },
-                    {
-                        num: "4",
-                        title: "Ask For Edits",
-                        desc: "if anything needs adjusting (within original scope).",
-                    },
-                ]}
-            />
-            <SubjectsWhatYouGet title="Why Students Love TutorHives"
-                bullets={[
-                    "Saves hours of stress and frustration",
-                    "Clear, correct answers that actually make sense",
-                    "Fast delivery, even for urgent homework",
-                    "Affordable pricing with no surprises",
-                    "Perfect for both school-level and college-level chemistry",
-                ]}
-                image="/images/Student-reviewing-solved-accounting-assignment.jpg"
-                darkImage="/images/about/about-dark-01.png" />
             <WriteMyPaper
                 title="Conclusion"
                 paragraphs={[
-                    "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
+                    "Getting support with your computer science homework doesn’t have to mean outsourcing your learning. With the right approach—preparation, selective help, and a steady growth mindset—you can turn a stressful assignment into a chance to build your skills. At Tutorhives, we believe in helping you succeed now and become confident for the future. Ready to get started? Connect with us and let’s make your next assignment your best one."
                 ]}
             />
-            <SubjectsFAQs/>
-
+             <SubjectsFAQs faqs={faqData}/>
         </>
     );
 }

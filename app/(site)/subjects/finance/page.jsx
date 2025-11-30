@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Chemistry Homework Help | TutorHives.com",
-  description:
-    "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
+    title: "Finance Homework Help | TutorHives.com",
+    description:
+        "Get clear, accurate finance homework and assignment solutions from TutorHives.com. Expert help, fast delivery, and stress-free support for students."
 };
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
@@ -14,114 +14,186 @@ import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+const faqData = [
+    {
+        id: 1,
+        question: "What types of finance homework can you help with?",
+        answer:
+            "Pretty much all finance topics—TVM, valuation, ratios, capital budgeting, portfolio theory, corporate finance, Excel tasks and more.",
+    },
+    {
+        id: 2,
+        question: "Can you complete urgent finance assignments?",
+        answer:
+            "Yes! Many students come to us with last-minute deadlines. If it’s manageable, we’ll complete it quickly.",
+    },
+    {
+        id: 3,
+        question: "Who solves the finance homework?",
+        answer:
+            "Experienced finance professionals who understand the subject deeply and know how to present answers clearly.",
+    },
+    {
+        id: 4,
+        question: "Can I get step-by-step explanations?",
+        answer:
+            "Yes. You can ask for detailed steps, explanations and reasoning for calculations or graphs.",
+    },
+    {
+        id: 5,
+        question: "Will the work be original?",
+        answer:
+            "Absolutely. Every assignment is created from scratch. Nothing is copied or reused.",
+    },
+    {
+        id: 6,
+        question: "How do I submit my homework?",
+        answer:
+            "Just upload your instructions and files on TutorHives.com. Our team will review everything and send you a quote.",
+    },
+    {
+        id: 7,
+        question: "What if I need changes to the solution?",
+        answer:
+            "Revisions that fit your original instructions are free. Just tell us what you need updated.",
+    },
+    {
+        id: 8,
+        question: "How do you decide the price?",
+        answer:
+            "Pricing depends on how complex the assignment is and how soon you need it. Everything is shared upfront—no hidden fees.",
+    },
+    {
+        id: 9,
+        question: "Is my information private?",
+        answer:
+            "Yes. Your files, messages and personal details are always kept confidential.",
+    },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
         <>
             <Header />
             <SubjectsHeroSection
-                title="Chemistry Homework Help – Accurate, Expert-Solved Assignments"
-                subtitle="Chemistry can be exciting—until the equations, reactions and calculations start piling up. When students feel stuck or pressed for time, getting clear, accurate help can make all the difference. TutorHives.com offers professional chemistry homework help by delivering fully solved assignments that are easy to understand and ready to submit. From basic concepts to advanced problem-solving, TutorHives makes chemistry feel manageable again."
+                title="Finance Homework Help – Expert-Solved Assignments Made Simple"
+                subtitle="Finance can be fascinating—until you're staring at formulas, spreadsheets, valuation problems, or case studies that refuse to make sense. When deadlines are tight or certain concepts feel overwhelming, getting the right support can save hours of stress. TutorHives.com offers friendly, reliable finance homework help with fully solved assignments that are easy to follow and ready to submit. Whether you're working through time value of money or complex financial modeling, TutorHives makes things feel manageable again."
             />
-            <SubjectsAbout title="Why Students Look for Chemistry Homework Help?"
-                description="Chemistry is a subject that blends theory, math and deep understanding of how substances behave. That mix can be challenging, especially when deadlines are tight. Students often reach out because they:"
+              <WhatsAppButton />
+            <SubjectsAbout
+                title="Why Students Look for Finance Homework Help"
+                description="Finance is a mix of math, logic, business understanding, and analytical thinking. It can be rewarding, but also pretty demanding. Students usually look for help when they:"
                 bullets={[
-                    "Struggle with balancing equations or understanding reactions",
-                    "Find stoichiometry and thermochemistry confusing",
-                    "Have trouble applying formulas to multi-step problems",
-                    "Need help visualizing molecular structures or chemical bonding",
-                    "Are juggling multiple subjects at once",
+                    "Struggle with time value of money or discounted cash flow",
+                    "Get stuck on corporate finance problems or financial ratios",
+                    "Find risk, return, and portfolio questions confusing",
+                    "Need help preparing neat, accurate Excel-based solutions",
+                    "Don’t have time to write long analysis-based answers",
+                    "Feel overwhelmed by multi-step calculations",
                 ]}
-                shortDescription={`Searches like chem helper and chemistry hw help show how common it is for students to look for reliable, professional support. They don’t want generic guidance—they want clear, correct solutions that save time and reduce stress.`}
+                shortDescription={`Searches for finance homework help keep rising because students want clear, correct, professional solutions—not vague hints or incomplete steps.`}
                 image="/images/signup.png"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+
             <SubjectsWhyChoose
                 title="Why TutorHives.com Is a Trusted Choice"
                 points={[
                     {
-                        heading: "Experts Who Know Chemistry Inside Out",
-                        text: "Your assignment is handled by experienced chemistry professionals who understand the subject and know how to break it down into simple, accurate steps.",
+                        heading: "Finance Experts Who Explain Clearly",
+                        text: "Each assignment is solved by a finance specialist who knows how to break down complex ideas into simple, understandable steps.",
                     },
                     {
-                        heading: "Reliable, Clear, Student-Friendly Solutions",
-                        text: "Everything is solved neatly and accurately, with optional explanations so students can learn while reviewing the finished work.",
+                        heading: "Organized, Instruction-Friendly Solutions",
+                        text: "Every solution is clean, structured, and delivered exactly how your instructor expects it. If you request explanations, they're written in easy-to-understand language.",
                     },
                     {
-                        heading: "Straightforward and Honest",
-                        text: "No hidden charges. No reused solutions. No confusion. Just a simple process that puts the student first. Privacy and originality are guaranteed—every assignment is created from scratch.",
+                        heading: "Straightforward, Honest Service",
+                        text: "No reused content. No hidden charges. No complicated process. Just original, private, student-focused help every time.",
                     },
                 ]}
             />
-            <WhatsAppButton />
+
             <HowItWorksSubjectsSection
-                title="What Chemistry Homework Help Includes"
-                subtitle="We Solve a Wide Range of Chemistry Problems"
+                title="What TutorHives.com Helps With"
+                subtitle="We Solve a Wide Range of Finance Assignments"
                 points={[
-                    "TutorHives.com can handle almost any topic or difficulty level, including:",
-                    "Balancing equations and predicting products",
-                    "Stoichiometry, kinetics and thermodynamics",
-                    "Acid–base problems, pH/pOH calculations",
-                    "Redox reactions and electrochemistry",
-                    "Naming compounds, molecular geometry and bonding",
-                    "Organic chemistry basics and mechanisms",
-                    "Environmental and analytical chemistry tasks",
+                    "Time Value of Money (TVM)",
+                    "Discounted Cash Flow (DCF) & Valuation",
+                    "Corporate Finance & Capital Budgeting",
+                    "Financial Ratios, Statements & Analysis",
+                    "Portfolio Theory & Risk/Return Concepts",
+                    "Cost of Capital (WACC, CAPM, Beta)",
+                    "Bond Pricing & Yield Calculations",
+                    "Stock Valuation & Dividend Models",
+                    "Break-even, Forecasting & Budgeting",
+                    "Excel-based finance problems",
                 ]}
             />
+
             <WhyStudentsPrefer
                 title="What You Receive"
                 bullets={[
-                    "Fully solved homework/assignment",
-                    "Correct formulas and steps",
-                    "Clear structure and easy-to-follow answers",
-                    "Diagrams or chemical structures (if needed)",
-                    "Solutions tailored exactly to your instructions",
-                    "It’s a smooth blend of accuracy, clarity and convenience",
+                    "Fully solved, ready-to-submit assignments",
+                    "Accurate formulas, calculations, and explanations",
+                    "Clean, neat tables or spreadsheets (when required)",
+                    "Explanations written clearly upon request",
+                    "Formatting exactly based on your instructions",
+                    "TutorHives focuses on clarity, accuracy, and making your assignment stress-free",
                 ]}
             />
+
             <SubjectsStepsSection
                 title="How the Process Works"
-                subtitle="A Simple, Stress-Free 4-Step Flow"
+                subtitle="A Simple, Student-Friendly 4-Step Flow"
                 bgColor="#FFF3B0"
                 steps={[
                     {
                         num: "1",
-                        title: "Upload your assignment with instructions and deadline",
+                        title: "Upload your finance homework with instructions and deadline",
                         desc: "Upload The Task, Requirements, Deadline",
                     },
                     {
                         num: "2",
-                        title: "Receive a Quick Quote",
-                        desc: "Based on Complexity, Topic, Deadline.",
+                        title: "Receive a clear quote",
+                        desc: "Fair and transparent pricing based on complexity and urgency",
                     },
                     {
                         num: "3",
-                        title: "Get Your Completed Solution",
-                        desc: "Clean, Accurate and Ready to Submit.",
+                        title: "Get your fully solved solution",
+                        desc: "Organized, accurate, and ready to submit",
                     },
                     {
                         num: "4",
-                        title: "Ask For Edits",
-                        desc: "if anything needs adjusting (within original scope).",
+                        title: "Request revisions if needed",
+                        desc: "Revisions are included to match your original instructions",
                     },
                 ]}
             />
-            <SubjectsWhatYouGet title="Why Students Love TutorHives"
+
+            <SubjectsWhatYouGet
+                title="Why Students Love Using TutorHives"
                 bullets={[
-                    "Saves hours of stress and frustration",
-                    "Clear, correct answers that actually make sense",
-                    "Fast delivery, even for urgent homework",
-                    "Affordable pricing with no surprises",
-                    "Perfect for both school-level and college-level chemistry",
+                    "Saves time when you're overloaded with work",
+                    "Makes tough finance concepts much easier",
+                    "Clean, accurate calculations you can trust",
+                    "Works for school, college, and advanced finance courses",
+                    "Quick turnaround for tight deadlines",
+                    "No hidden fees, no confusion",
                 ]}
                 image="/images/Student-reviewing-solved-accounting-assignment.jpg"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+
             <WriteMyPaper
                 title="Conclusion"
                 paragraphs={[
-                    "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
+                    "Finance doesn’t have to feel stressful or intimidating. With TutorHives.com, students get fully solved, accurate assignments that make learning easier. If you’re looking for dependable finance homework help, TutorHives is ready to step in and simplify the process. Upload your finance assignment today and get expert solutions delivered with clarity and care.",
                 ]}
             />
-            <SubjectsFAQs/>
+            =
+            <SubjectsFAQs faqs={faqData} />
 
         </>
     );

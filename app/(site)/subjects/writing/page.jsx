@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Chemistry Homework Help | TutorHives.com",
-  description:
-    "Get accurate, expert-solved chemistry homework and assignments from TutorHives.com. Fast, reliable, and stress-free solutions for students.",
+    title: "Writing Homework Help | TutorHives.com",
+    description:
+        "Get expert writing homework help from TutorHives.com. Essays, summaries, reports, reflections, and more — clearly written and ready to submit.",
 };
 import SubjectsHeroSection from "@/components/SubjectsHeroSection";
 import SubjectsAbout from "@/components/SubjectsAbout";
@@ -14,114 +14,193 @@ import WhyStudentsPrefer from "@/components/WhyStudentsPrefer";
 import WriteMyPaper from "@/components/WriteMyPaper";
 import SubjectsFAQs from "@/components/SubjectsFaqs";
 import HowItWorksSubjectsSection from "@/components/HowItWorksSubjectsSection";
+const faqData = [
+    {
+        id: 1,
+        question: "What types of writing assignments can you help with?",
+        answer:
+            "Essays, reflections, summaries, short responses, reports, research writing, creative writing, discussion posts and more.",
+    },
+    {
+        id: 2,
+        question: "Can you match my writing style?",
+        answer:
+            "Yes! You can request simple, conversational, academic, or formal writing — we match your tone and level.",
+    },
+    {
+        id: 3,
+        question: "Do you help with grammar and rewriting?",
+        answer:
+            "Absolutely. We can rewrite, polish, edit or fully rewrite drafts to make them clearer and more professional.",
+    },
+    {
+        id: 4,
+        question: "Can you help with citations and formatting?",
+        answer:
+            "Yes. We can format your work in APA, MLA, Chicago, or any style your instructor requires.",
+    },
+    {
+        id: 5,
+        question: "Is all writing original?",
+        answer:
+            "100%. Everything is written from scratch for your assignment — nothing is copied or reused.",
+    },
+    {
+        id: 6,
+        question: "Can you complete urgent writing tasks?",
+        answer:
+            "Yes. If the deadline is realistic, we can complete writing assignments quickly.",
+    },
+    {
+        id: 7,
+        question: "Will the finished work sound natural?",
+        answer:
+            "Yes. We write in clean, understandable language so your assignment sounds natural and clear.",
+    },
+    {
+        id: 8,
+        question: "How do I submit my assignment?",
+        answer:
+            "Just upload your instructions and files on TutorHives.com, and you’ll receive a quote right away.",
+    },
+    {
+        id: 9,
+        question: "What if I need revisions?",
+        answer:
+            "Revisions based on your original instructions are always free.",
+    },
+    {
+        id: 10,
+        question: "Is my information kept private?",
+        answer:
+            "Yes — your files, instructions and details are fully confidential.",
+    },
+];
+
 
 export default function AccountingHomeworkHelp() {
     return (
         <>
             <Header />
-            <SubjectsHeroSection
-                title="Chemistry Homework Help – Accurate, Expert-Solved Assignments"
-                subtitle="Chemistry can be exciting—until the equations, reactions and calculations start piling up. When students feel stuck or pressed for time, getting clear, accurate help can make all the difference. TutorHives.com offers professional chemistry homework help by delivering fully solved assignments that are easy to understand and ready to submit. From basic concepts to advanced problem-solving, TutorHives makes chemistry feel manageable again."
-            />
-            <SubjectsAbout title="Why Students Look for Chemistry Homework Help?"
-                description="Chemistry is a subject that blends theory, math and deep understanding of how substances behave. That mix can be challenging, especially when deadlines are tight. Students often reach out because they:"
+               <SubjectsHeroSection
+                title="Writing Homework Help – Clear, Polished & Professionally Written Assignments"
+                subtitle="Writing assignments can feel simple at first… until you’re actually staring at a blank page trying to come up with the right words. Essays, summaries, research responses, reflections, reports — each one requires structure, clarity, grammar, and enough time to do it well. When deadlines pile up or ideas just won’t flow, getting supportive help can make all the difference. TutorHives.com offers friendly, reliable writing homework help with well-written, easy-to-understand assignments that match your style and instructions perfectly.
+"/>
+            <SubjectsAbout
+                title="Why Students Look for Writing Homework Help"
+                description="Writing takes time — a lot of it. And between classes, commitments, readings and research, students often need support when they:"
                 bullets={[
-                    "Struggle with balancing equations or understanding reactions",
-                    "Find stoichiometry and thermochemistry confusing",
-                    "Have trouble applying formulas to multi-step problems",
-                    "Need help visualizing molecular structures or chemical bonding",
-                    "Are juggling multiple subjects at once",
+                    "Struggle getting started or organizing ideas",
+                    "Need help expressing thoughts clearly",
+                    "Find grammar, flow, or structure confusing",
+                    "Want a polished piece that sounds natural and academic",
+                    "Don’t feel confident writing summaries or reflections",
+                    "Stress over citations, formatting or word counts",
+                    "Simply don’t have time to finish long writing tasks",
                 ]}
-                shortDescription={`Searches like chem helper and chemistry hw help show how common it is for students to look for reliable, professional support. They don’t want generic guidance—they want clear, correct solutions that save time and reduce stress.`}
+                shortDescription={`That’s why searches for writing homework help continue to grow — students want clear, natural writing that meets academic expectations.`}
                 image="/images/signup.png"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+              <WhatsAppButton />
+
             <SubjectsWhyChoose
                 title="Why TutorHives.com Is a Trusted Choice"
                 points={[
                     {
-                        heading: "Experts Who Know Chemistry Inside Out",
-                        text: "Your assignment is handled by experienced chemistry professionals who understand the subject and know how to break it down into simple, accurate steps.",
+                        heading: "Writers Who Understand Academic Standards",
+                        text: "Assignments are written by professionals who know how to structure essays, follow instructions, and write in a clean, understandable voice that fits your grade level.",
                     },
                     {
-                        heading: "Reliable, Clear, Student-Friendly Solutions",
-                        text: "Everything is solved neatly and accurately, with optional explanations so students can learn while reviewing the finished work.",
+                        heading: "Clear, Well-Organized, Student-Friendly Writing",
+                        text: "Every piece is written in smooth, simple language. Whether it’s an essay, reflection or research-based response, the writing is clear, cohesive and easy to follow.",
                     },
                     {
-                        heading: "Straightforward and Honest",
-                        text: "No hidden charges. No reused solutions. No confusion. Just a simple process that puts the student first. Privacy and originality are guaranteed—every assignment is created from scratch.",
+                        heading: "Honest & Straightforward Process",
+                        text: "No reused papers. No hidden fees. No overcomplicated instructions. Everything is original, private, and tailored specifically to your assignment.",
                     },
                 ]}
             />
-            <WhatsAppButton />
+
             <HowItWorksSubjectsSection
-                title="What Chemistry Homework Help Includes"
-                subtitle="We Solve a Wide Range of Chemistry Problems"
+                title="What TutorHives.com Helps With"
+                subtitle="We Write a Wide Range of Assignments"
                 points={[
-                    "TutorHives.com can handle almost any topic or difficulty level, including:",
-                    "Balancing equations and predicting products",
-                    "Stoichiometry, kinetics and thermodynamics",
-                    "Acid–base problems, pH/pOH calculations",
-                    "Redox reactions and electrochemistry",
-                    "Naming compounds, molecular geometry and bonding",
-                    "Organic chemistry basics and mechanisms",
-                    "Environmental and analytical chemistry tasks",
+                    "Essays (narrative, persuasive, compare/contrast, analytical, etc.)",
+                    "Summaries & paraphrasing assignments",
+                    "Reflection papers",
+                    "Short answers & responses",
+                    "Reports",
+                    "Creative writing tasks",
+                    "Research-based writing",
+                    "Discussion posts",
+                    "Reading reflections",
+                    "Book/movie/article reviews",
+                    "Argumentative writing",
+                    "Descriptive writing",
                 ]}
             />
+
             <WhyStudentsPrefer
                 title="What You Receive"
                 bullets={[
-                    "Fully solved homework/assignment",
-                    "Correct formulas and steps",
-                    "Clear structure and easy-to-follow answers",
-                    "Diagrams or chemical structures (if needed)",
-                    "Solutions tailored exactly to your instructions",
-                    "It’s a smooth blend of accuracy, clarity and convenience",
+                    "Clear, well-written, ready-to-submit content",
+                    "Correct spelling, grammar, formatting and structure",
+                    "Writing in your preferred tone (simple, professional, academic, etc.)",
+                    "Optional citations or references",
+                    "Work 100% tailored to your instructions",
+                    "Whether it’s a large essay or a short paragraph, TutorHives writes it cleanly and professionally",
                 ]}
             />
+
             <SubjectsStepsSection
                 title="How the Process Works"
-                subtitle="A Simple, Stress-Free 4-Step Flow"
+                subtitle="Simple 4-Step Workflow"
                 bgColor="#FFF3B0"
                 steps={[
                     {
                         num: "1",
-                        title: "Upload your assignment with instructions and deadline",
+                        title: "Upload your writing assignment with instructions and deadline",
                         desc: "Upload The Task, Requirements, Deadline",
                     },
                     {
                         num: "2",
-                        title: "Receive a Quick Quote",
-                        desc: "Based on Complexity, Topic, Deadline.",
+                        title: "Receive a clear quote — honest and upfront",
+                        desc: "Transparent pricing based on assignment requirements",
                     },
                     {
                         num: "3",
-                        title: "Get Your Completed Solution",
-                        desc: "Clean, Accurate and Ready to Submit.",
+                        title: "Get your fully written homework",
+                        desc: "Polished, formatted, and ready to submit",
                     },
                     {
                         num: "4",
-                        title: "Ask For Edits",
-                        desc: "if anything needs adjusting (within original scope).",
+                        title: "Request revisions if something needs adjusting",
+                        desc: "Free revisions included to match your original instructions",
                     },
                 ]}
             />
-            <SubjectsWhatYouGet title="Why Students Love TutorHives"
+
+            <SubjectsWhatYouGet
+                title="Why Students Love TutorHives"
                 bullets={[
-                    "Saves hours of stress and frustration",
-                    "Clear, correct answers that actually make sense",
-                    "Fast delivery, even for urgent homework",
-                    "Affordable pricing with no surprises",
-                    "Perfect for both school-level and college-level chemistry",
+                    "Saves time and reduces writing stress",
+                    "Clear, natural writing that matches your style",
+                    "Perfect for all grade levels",
+                    "Fast turnaround on urgent writing tasks",
+                    "No hidden fees or complicated steps",
                 ]}
                 image="/images/Student-reviewing-solved-accounting-assignment.jpg"
-                darkImage="/images/about/about-dark-01.png" />
+                darkImage="/images/about/about-dark-01.png"
+            />
+
             <WriteMyPaper
                 title="Conclusion"
                 paragraphs={[
-                    "The following keywords are naturally covered for improved search visibility: chemistry homework help, chemistry hw help, and chem helper. Conclusion When chemistry gets overwhelming, be it equations, reactions, or extensive lab reports, TutorHives.com is ready to assist you with professionally solved, accurate assignments. With its clear solutions, expert knowledge, and ease of submitting work, the platform is highly suitable for students seeking reliable services in chemistry homework help. Get your chemistry assignment solved with us! Upload your task now and get expert solutions within the shortest deadlines."
+                    "Writing doesn’t have to be stressful or time-consuming. With TutorHives.com, students get clear, polished and professionally written assignments that are ready to submit — without the overwhelm. If you’re searching for reliable writing homework help, TutorHives is here to make writing simpler, smoother and stress-free. Upload your writing assignment today and receive expert-written work you can trust.",
                 ]}
             />
-            <SubjectsFAQs/>
+            <SubjectsFAQs faqs={faqData} />
 
         </>
     );
