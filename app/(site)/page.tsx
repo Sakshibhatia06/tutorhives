@@ -12,7 +12,7 @@ import TrustedUniversities from '@/components/TrustedUniversities'
 import GlobalPartnerSection from '@/components/GlobalPartnerSection'
 
 export const metadata: Metadata = {
-  title: "online assignment help | help with assignment - Assignmentswallah",
+  title: "online assignment help | help with assignment - Tutorhives",
   description: "Get expert assignment help services from a reliable assignment helper. Fast, plagiarism-free solutions to boost your grades and academic performance."
 };
 

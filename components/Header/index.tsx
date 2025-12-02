@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full py-4 transition-all duration-200 backdrop-blur-md ${stickyMenu ? "bg-[#ffffff]" : "bg-[#ffffff]"
+      className={`fixed left-0 top-0 z-50 w-full py-2 transition-all duration-200 backdrop-blur-md ${stickyMenu ? "bg-[#ffffff]" : "bg-[#ffffff]"
         }`}
     >
       <div className="relative mx-auto max-w-6xl flex items-center justify-between px-4 md:px-8 2xl:px-0">
@@ -75,29 +75,39 @@ const Header = () => {
                   <>
                     <div className="flex items-center gap-2">
                       <Link
-                        href={menuItem.path || pathUrl} // stays on same page if no real link
-                        onClick={() => {
-                          closeMobileMenu();
-                        }}
+                        href={menuItem.path || pathUrl}
+                        onClick={() => closeMobileMenu()}
                         className={`tracking-wide text-black ${pathUrl === menuItem.path ? "text-[#000000]" : ""
                           }`}
                       >
                         {menuItem.title}
                       </Link>
 
+                      {/* Your SVG for items that have submenu */}
                       <button
                         onClick={() => toggleSubmenu(menuItem.id)}
                         className="xl:hidden"
                       >
                         <svg
-                          className={`h-3 w-3 text-black fill-current transition-transform duration-200 ${openSubmenu === menuItem.id ? "rotate-180" : ""
+                          className={`h-4 w-4 fill-current text-black transition-transform duration-200 ${openSubmenu === menuItem.id ? "rotate-180" : ""
                             }`}
-                          viewBox="0 0 512 512"
+                          viewBox="57 35.171 26 16.043"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <path d="M256 294.1l-135.5-135.5-45.3 45.3L256 384.8l180.8-180.9-45.3-45.3z" />
+                          <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                         </svg>
                       </button>
+
+                      {/* Desktop Hover Arrow */}
+                      <svg
+                        className="hidden xl:block h-4 w-4 fill-current text-black"
+                        viewBox="57 35.171 26 16.043"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
+                      </svg>
                     </div>
+
 
                     {/* Submenu */}
                     <ul
@@ -179,7 +189,7 @@ const Header = () => {
 
         {/* Right Buttons */}
         <div className="hidden xl:block">
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center">
             <a
               href="https://wa.me/917000000000?text=Hi%20I%20need%20homework%20help"
               target="_blank"

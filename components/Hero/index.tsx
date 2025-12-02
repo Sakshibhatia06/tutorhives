@@ -18,42 +18,6 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  const VerifiedBadge = () => (
-    <svg width="120" height="120" viewBox="0 0 130 130" fill="none">
-      <defs>
-        <radialGradient id="gold_grad" cx="50%" cy="50%" r="70%">
-          <stop offset="0%" stopColor="#f6d890" />
-          <stop offset="50%" stopColor="#d2a347" />
-          <stop offset="100%" stopColor="#8a6220" />
-        </radialGradient>
-      </defs>
-
-      <circle cx="65" cy="65" r="63" fill="url(#gold_grad)" stroke="#eac16c" strokeWidth="3" />
-      <circle cx="65" cy="65" r="48" fill="none" stroke="#f7d88b" strokeWidth="2" strokeDasharray="4 8" />
-      <text x="65" y="32" textAnchor="middle" fill="#fff" fontSize="12" fontWeight="700">VERIFIED</text>
-      <text x="65" y="98" textAnchor="middle" fill="#fff" fontSize="12" fontWeight="700">ANSWERS</text>
-      <text x="65" y="73" textAnchor="middle" fill="#fff" fontSize="18" fontWeight="700">100%</text>
-    </svg>
-  );
-
-  const MoneyBackBadge = () => (
-    <svg width="120" height="120" viewBox="0 0 130 130" fill="none">
-      <defs>
-        <radialGradient id="gold_grad2" cx="50%" cy="50%" r="70%">
-          <stop offset="0%" stopColor="#f6d890" />
-          <stop offset="50%" stopColor="#d2a347" />
-          <stop offset="100%" stopColor="#8a6220" />
-        </radialGradient>
-      </defs>
-
-      <circle cx="65" cy="65" r="63" fill="url(#gold_grad2)" stroke="#eac16c" strokeWidth="3" />
-      <circle cx="65" cy="65" r="48" fill="none" stroke="#f7d88b" strokeWidth="2" strokeDasharray="4 8" />
-      <text x="65" y="32" textAnchor="middle" fill="#fff" fontSize="12" fontWeight="700">MONEY BACK</text>
-      <text x="65" y="98" textAnchor="middle" fill="#fff" fontSize="12" fontWeight="700">GUARANTEE</text>
-      <text x="65" y="73" textAnchor="middle" fill="#fff" fontSize="18" fontWeight="700">100%</text>
-    </svg>
-  );
-
   return (
     <section className="relative text-white overflow-hidden">
 
@@ -67,7 +31,7 @@ export default function Hero() {
           Get Uniquely Crafted
         </h2>
 
-       <h1 className="text-4xl md:text-6xl font-extrabold mt-1 mb-1 pb-4">
+       <h1 className="text-4xl md:text-4xl font-extrabold mt-1 mb-1 pb-4">
   <span
     className={`inline-block transition-all duration-500 text-[#FFEAB3] 
       ${animate ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"}`}
@@ -86,7 +50,7 @@ export default function Hero() {
         </p>
 
         {/* Button */}
-       <div className="flex justify-center mt-8">
+       <div className="flex justify-center mt-12">
   <a
     href="https://wa.me/917000000000?text=Hi%20I%20need%20homework%20help"
     target="_blank"
@@ -99,48 +63,105 @@ export default function Hero() {
 
 
         {/* Ratings */}
-        <div className="flex flex-col md:flex-row justify-between md:gap-32 gap-4 mt-10 text-center md:text-left">
+        <div className="flex md:flex-row justify-between md:gap-32 gap-4 mt-10 text-center md:text-left">
+<div className="flex items-center gap-3">
+  <img
+    src="/images/trustpilot-1.png"
+    alt="Trustpilot"
+    className="md:h-[40px] h-[28px] w-auto object-contain mb-3"
+  />
+  <span className="text-white md:text-[34px] text-[24px] font-semibold leading-[1] flex items-center">
+    4.4
+  </span>
+</div>
 
-  <div className="flex items-center justify-center md:justify-start gap-2 text-white text-2xl md:text-3xl font-semibold">
-    ⭐ <span className="opacity-90">Trustpilot</span> 4.4
-  </div>
 
-  <div className="flex items-center justify-center md:justify-start gap-2 text-white text-2xl md:text-3xl font-semibold">
-    ⭐ <span className="opacity-90">EduReviewer</span> 4.4
-  </div>
+<div className="flex items-center gap-3">
+  <img
+    src="/images/edureviewer.png"
+    alt="Trustpilot"
+    className="h-[28px] w-auto md:h-[40px] object-contain"
+  />
+  <span className="text-white md:text-[34px] text-[24px]  font-semibold leading-[1] flex items-center">
+    4.4
+  </span>
+</div>
 
 </div>
 
       </div>
 
-      {/* Bottom Curve Bar */}
-      <div className="bg-[#8a6220] py-6 relative z-10">
-        <p className="text-center text-white/90 text-xl mb-10">
-          Trusted by 2.1M+ Happy Students
-        </p>
+ <section className="bg-[#8b6e42] mt-10 w-full px-4 py-8">
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center">
+  {/* Top Row */}
+  <div
+    className="
+      flex md:flex-row
+      items-center justify-center 
+      gap-6 md:gap-[270px] 
+      mt-[-60px] md:mt-[-90px]
+    "
+  >
+    {/* Left Image */}
+    <img
+      src="/images/verified_answers (1).png"
+      alt="Verified Answers"
+      className="w-20 md:w-32 h-auto"
+      style={{
+        filter:
+          "brightness(100%) contrast(120%) saturate(150%) blur(0px) hue-rotate(180deg)",
+      }}
+    />
 
-          <div className="flex flex-col items-center">
-            <VerifiedBadge />
-            <p className="text-2xl font-bold mt-2">86526+</p>
-            <span className="text-sm opacity-95">Student Ratings</span>
-          </div>
+    <span
+      className="
+        bg-[#8b6e42] text-white 
+        px-6 py-2 
+        rounded-3xl 
+        text-[16px] md:text-md
+        text-center 
+      "
+    >
+      Trusted by 2.1 M+ Happy Students
+    </span>
 
-          <div className="flex flex-col items-center">
-            <MoneyBackBadge />
-            <p className="text-2xl font-bold mt-2">147526+</p>
-            <span className="text-sm opacity-95">Delivered Orders</span>
-          </div>
+    {/* Right Image */}
+    <img
+      src="/images/money_back (1).png"
+      alt="Money Back"
+      className="w-20 md:w-32 h-auto"
+      style={{
+        filter:
+          "brightness(100%) contrast(120%) saturate(150%) blur(0px) hue-rotate(180deg)",
+      }}
+    />
+  </div>
 
-          <div className="flex flex-col items-center">
-            <VerifiedBadge />
-            <p className="text-2xl font-bold mt-2">15626+</p>
-            <span className="text-sm opacity-95">Subject Matter Experts</span>
-          </div>
+  {/* Stats Numbers */}
+  <div
+    className="
+      flex flex-col md:flex-row
+      items-center md:justify-center 
+      gap-6 md:gap-[180px]"
+  >
+    <div className="text-center">
+      <h2 className="text-xl md:text-3xl font-bold">86526+</h2>
+      <p className="text-sm md:text-base mt-1">Student Ratings</p>
+    </div>
 
-        </div>
-      </div>
+    <div className="text-center">
+      <h2 className="text-xl md:text-3xl font-bold">147526+</h2>
+      <p className="text-sm md:text-base mt-1">Delivered Orders</p>
+    </div>
+
+    <div className="text-center">
+      <h2 className="text-xl md:text-3xl font-bold">15626+</h2>
+      <p className="text-sm md:text-base mt-1">Subject Matter Experts</p>
+    </div>
+  </div>
+
+</section>
+
     </section>
   );
 }

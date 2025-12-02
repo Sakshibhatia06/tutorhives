@@ -38,7 +38,7 @@ export default function TutorHero() {
             className="object-contain drop-shadow-xl"
             style={{
               filter:
-                "brightness(100%) contrast(120%) saturate(150%) blur(0px) hue-rotate(180deg)"
+                "brightness(90%) contrast(140%) saturate(145%) blur(0px) hue-rotate(180deg)"
             }}
           />
         </div>

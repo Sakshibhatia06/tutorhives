@@ -3,9 +3,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // choose what you need
+});
+
 import "../globals.css";
-const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
 
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black ${inter.className}`}>
+      <body className={`dark:bg-black ${sourceSans.className}`}>
         <ThemeProvider
           enableSystem={false}
           attribute="class"
