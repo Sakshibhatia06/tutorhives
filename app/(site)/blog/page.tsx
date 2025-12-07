@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Blog – Latest Articles & Updates",
+  description:
+    "Read the latest blogs, guides, tips, and updates. Stay informed with high-quality articles on important topics.",
+};
+
 async function getPosts() {
   const res = await fetch(
     "https://snow-manatee-405536.hostingersite.com/wp-json/wp/v2/posts?_embed",
@@ -23,7 +29,6 @@ export default async function BlogPage() {
             key={post.id}
             className="border rounded-lg p-5 shadow-sm bg-white flex flex-col"
           >
-            {/* Show image only if exists */}
             {img && (
               <div className="w-full mb-4">
                 <Image
