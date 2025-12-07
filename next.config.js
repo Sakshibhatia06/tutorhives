@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
 
   images: {
     domains: [
       "localhost",
-      "snow-manatee-405536.hostingersite.com",
+      "snow-manatee-405536.hostingersite.com", // WordPress domain
     ],
     remotePatterns: [
       {

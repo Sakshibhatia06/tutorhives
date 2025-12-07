@@ -1,68 +1,71 @@
 import Image from "next/image";
-import Link from "next/link";
 
-export const metadata = {
-  title: "Blog – Latest Articles & Updates",
-  description:
-    "Read the latest blogs, guides, tips, and updates. Stay informed with high-quality articles on important topics.",
-};
-
-async function getPosts() {
+// Fetch post by slug
+async function getPost(slug: string) {
   const res = await fetch(
-    "https://snow-manatee-405536.hostingersite.com/wp-json/wp/v2/posts?_embed",
+    `https://snow-manatee-405536.hostingersite.com/wp-json/wp/v2/posts?slug=${slug}&_embed`,
     { next: { revalidate: 10 } }
   );
-  return res.json();
+  const data = await res.json();
+  return data[0];
 }
 
-export default async function BlogPage() {
-  const posts = await getPosts();
+// Dynamic Metadata for SEO
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const post = await getPost(params.slug);
+
+  return {
+    title: post?.title?.rendered || "Blog",
+    description:
+      post?.excerpt?.rendered?.replace(/<[^>]+>/g, "").slice(0, 160) ||
+      "Read our blog article.",
+  };
+}
+
+// Main Blog Detail Page
+export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
+  const post = await getPost(params.slug);
+
+  if (!post) {
+    return <div className="p-8 text-center text-gray-600">Blog not found.</div>;
+  }
+
+  const featuredImage =
+    post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? null;
 
   return (
-    <div className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-30">
-      {posts.map((post: any) => {
-        const img =
-          post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || null;
+    <div className="px-5 md:px-10 lg:px-0 max-w-5xl mx-auto mt-20 py-16">
+      {/* Blog Title */}
+      <h1
+        className="text-4xl md:text-5xl font-bold text-black leading-tight"
+        dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+      />
 
-        return (
-          <div
-            key={post.id}
-            className="border rounded-lg p-5 shadow-sm bg-white flex flex-col"
-          >
-            {img && (
-              <div className="w-full mb-4">
-                <Image
-                  src={img}
-                  alt={post.title.rendered}
-                  width={600}
-                  height={350}
-                  className="rounded-lg w-full object-cover"
-                />
-              </div>
-            )}
+      {/* Featured Image */}
+      {featuredImage && (
+        <div className="mt-10">
+          <Image
+            src={featuredImage}
+            alt={post.title.rendered}
+            width={1200}
+            height={600}
+            className="rounded-lg w-full object-cover"
+          />
+        </div>
+      )}
 
-            <h2 className="text-xl text-black font-semibold">
-              {post.title.rendered}
-            </h2>
-
-            <p
-              className="text-black mt-2"
-              dangerouslySetInnerHTML={{
-                __html:
-                  post.excerpt.rendered
-                    .replace(/<[^>]+>/g, "")
-                    .slice(0, 120) + "...",
-              }}
-            />
-
-            <Link href={`/blog/${post.slug}`} className="mt-auto">
-              <button className="mt-4 bg-black text-white px-4 py-2 rounded">
-                Read More →
-              </button>
-            </Link>
-          </div>
-        );
-      })}
+      {/* Blog Content */}
+      <div
+        className="mt-10 text-black prose prose-lg max-w-none
+          prose-headings:text-black
+          prose-p:text-black
+          prose-li:text-black
+          prose-strong:text-black
+          prose-a:text-blue-600
+          prose-img:rounded-lg
+          leading-relaxed space-y-6"
+        dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+      />
     </div>
   );
 }

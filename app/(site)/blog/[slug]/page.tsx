@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-// Fetch post by slug
+// Fetch a single post by slug
 async function getPost(slug: string) {
   const res = await fetch(
     `https://snow-manatee-405536.hostingersite.com/wp-json/wp/v2/posts?slug=${slug}&_embed`,
     { next: { revalidate: 10 } }
   );
   const data = await res.json();
-  return data[0];
+  return data[0] || null;
 }
 
 // ✅ Dynamic Meta Title + Description
@@ -22,11 +22,16 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
+// Main Blog Detail Page
 export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
 
   if (!post) {
-    return <div className="p-8 text-center text-gray-600">Blog not found.</div>;
+    return (
+      <div className="p-8 text-center text-gray-600 text-lg">
+        Blog not found.
+      </div>
+    );
   }
 
   const featuredImage =
@@ -34,7 +39,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
 
   return (
     <div className="px-5 md:px-10 lg:px-0 max-w-5xl mx-auto mt-20 py-16">
-      {/* Title */}
+      {/* Blog Title */}
       <h1
         className="text-4xl md:text-5xl font-bold text-black leading-tight"
         dangerouslySetInnerHTML={{ __html: post.title.rendered }}
