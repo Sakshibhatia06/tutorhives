@@ -3,8 +3,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+
   images: {
-    domains: ["localhost"],
+    domains: [
+      "localhost",
+      "snow-manatee-405536.hostingersite.com",
+    ],
     remotePatterns: [
       {
         protocol: "https",
