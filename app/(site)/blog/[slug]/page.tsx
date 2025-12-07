@@ -1,5 +1,3 @@
-// app/(site)/blog/[slug]/page.tsx
-
 import Image from "next/image";
 
 // Fetch a single post by slug
@@ -12,9 +10,9 @@ async function getPost(slug: string) {
   return data[0] || null;
 }
 
-// Dynamic Meta Title + Description
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const { slug } = params; // No await needed
+// Dynamic Metadata
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params; // <- await because params is a Promise
   const post = await getPost(slug);
 
   return {
@@ -25,9 +23,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-// Main Blog Detail Page
-export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
-  const { slug } = params; // destructure slug
+// Main Blog Page
+export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params; // <- await here as well
   const post = await getPost(slug);
 
   if (!post) {
@@ -38,18 +36,15 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
     );
   }
 
-  const featuredImage =
-    post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? null;
+  const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? null;
 
   return (
     <div className="px-5 md:px-10 lg:px-0 max-w-5xl mx-auto mt-20 py-16">
-      {/* Blog Title */}
       <h1
         className="text-4xl md:text-5xl font-bold text-black leading-tight"
         dangerouslySetInnerHTML={{ __html: post.title.rendered }}
       />
 
-      {/* Featured Image */}
       {featuredImage && (
         <div className="mt-10">
           <Image
@@ -62,7 +57,6 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
         </div>
       )}
 
-      {/* Blog Content */}
       <div
         className="mt-10 text-black prose prose-lg max-w-none
           prose-headings:text-black

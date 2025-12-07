@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  productionBrowserSourceMaps: false,
 
   images: {
     domains: [
@@ -19,6 +20,7 @@ const nextConfig = {
   eslint: {
     // Skip ESLint during build (temporary unblock)
     ignoreDuringBuilds: true,
+
   },
   typescript: {
     // Allow build even if TS reports errors (temporary unblock)
