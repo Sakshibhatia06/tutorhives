@@ -1,3 +1,5 @@
+// app/(site)/blog/[slug]/page.tsx
+
 import Image from "next/image";
 
 // Fetch a single post by slug
@@ -10,9 +12,10 @@ async function getPost(slug: string) {
   return data[0] || null;
 }
 
-// ✅ Dynamic Meta Title + Description
+// Dynamic Meta Title + Description
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = await getPost(params.slug);
+  const { slug } = params; // No await needed
+  const post = await getPost(slug);
 
   return {
     title: post?.title?.rendered || "Blog",
@@ -24,7 +27,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 // Main Blog Detail Page
 export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
-  const post = await getPost(params.slug);
+  const { slug } = params; // destructure slug
+  const post = await getPost(slug);
 
   if (!post) {
     return (
@@ -73,4 +77,3 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
     </div>
   );
 }
-
