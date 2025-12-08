@@ -7,55 +7,55 @@ const services = [
     title: "Online Assignment Help",
     desc: "Got study-related doubts or need assistance? Clear your questions, find the right solutions, and talk to an expert.",
     img: "/images/image1.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20online%20assignment%20help"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Essay Writing Service",
     desc: "Let your ideas flow, and our expert writers will turn them into A+ essays for your assignments.",
     img: "/images/image2.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Live Session",
     desc: "Get clarity on every concept—enjoy personalized one-on-one expert sessions that ensure no doubts linger.",
     img: "/images/image3.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Lab Report Writing Services",
     desc: "With perfect accuracy, strong structure, and exact precision, your lab reports will easily earn an A+.",
     img: "/images/image4.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Project Report Writing Service",
     desc: "When innovation and creativity align with scientific excellence, your projects will undoubtedly stand out.",
     img: "/images/image5.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Speech Writing Service",
     desc: "With our words and your delivery, you’ll have a speech that captures attention and boosts your grades.",
     img: "/images/image6.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Presentation Writing Service",
     desc: "Achieve excellence in your presentations—trust our expert presentation writing service.",
     img: "/images/image7.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Video Solutions",
     desc: "Incorporate AV elements into your assignments to ensure complete clarity on every problem you face.",
     img: "/images/image8.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
   {
     title: "Online Tutoring",
     desc: "It’s time to eliminate your study concerns. Get interactive online tutoring to clarify confusion and solve your queries.",
     img: "/images/image9.png", // update your image path
-    whatsapp: "https://wa.me/919876543210?text=Hi%20I%20need%20essay%20writing%20service"
+    whatsapp: "https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
   },
 ];
 

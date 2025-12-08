@@ -18,9 +18,8 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex gap-4">
-          <a className="bg-[#b38737] p-2 rounded-md" href="#"><i className="fab fa-facebook-f"></i></a>
-          <a className="bg-[#b38737] p-2 rounded-md" href="#"><i className="fab fa-instagram"></i></a>
-          <a className="bg-[#b38737] p-2 rounded-md" href="#"><i className="fab fa-twitter"></i></a>
+          <a className="bg-[#b38737] p-2 rounded-md" href="https://www.facebook.com/profile.php?id=61579365031792#"><i className="fab fa-facebook-f"></i></a>
+          <a className="bg-[#b38737] p-2 rounded-md" href="https://www.instagram.com/tutors_hive/"><i className="fab fa-instagram"></i></a>
         </div>
       </div>
 
@@ -30,8 +29,6 @@ export default function Footer() {
       {/* Footer Links Section */}
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
 
-        {/* Services */}
-        {/* Services */}
 <div>
   <h3 className="font-bold text-lg mb-4">Services</h3>
   <ul className="space-y-2 text-white/90">
@@ -107,7 +104,7 @@ export default function Footer() {
         <p>©{new Date().getFullYear()} Tutor Hives. All Rights Reserved.</p>
 
         <div className="flex items-center gap-2">
-          <a href="https://wa.me/919234514356" className="font-medium">+91 9234514356</a>
+          <a href="https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment" className="font-medium">+91 8521389694</a>
         </div>
       </div>
     </footer>

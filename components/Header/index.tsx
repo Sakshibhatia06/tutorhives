@@ -192,7 +192,7 @@ const Header = () => {
         <div className="hidden xl:block">
           <div className="flex justify-center">
             <a
-              href="https://wa.me/917000000000?text=Hi%20I%20need%20homework%20help"
+              href="https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition text-center"

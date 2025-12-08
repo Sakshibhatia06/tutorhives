@@ -7,7 +7,7 @@ export default function ServiceHero({
   buttonText = "Get Assignment Help Now",
   bgColor = "#B88635",
   whatsappMessage = "Hi, I need help with my assignment",
-  whatsappNumber = "918000000000", // change to your number
+  whatsappNumber = "+918521389694", // change to your number
 }) {
   // WhatsApp Link
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;

@@ -12,7 +12,7 @@ const benefits = [
   {
     title: "24/7 support",
     desc: "When homework problems strike, we’re here for students at all hours.",
-   
+
     icon: "/images/text-2xl.png",
   },
   {
@@ -60,8 +60,8 @@ export default function HomeworkBenefits() {
               viewport={{ once: true }}
               className="flex gap-5 items-start"
             >
-             
-  <Image src={item.icon} width={80} height={80} alt={item.title} className="object-cover" />
+
+              <Image src={item.icon} width={80} height={80} alt={item.title} className="object-cover" />
 
 
               <div>
@@ -72,9 +72,17 @@ export default function HomeworkBenefits() {
           ))}
         </div>
 
-        <button className="mt-14 bg-[#b48232] text-white px-8 py-4 rounded-md text-sm font-medium hover:opacity-90 transition">
-          Get College Homework Help Now!
-        </button>
+        <div className="flex justify-center mt-12">
+          <a
+            href="https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-[#f8d88c] to-[#c8912b] text-[#6a480f] font-bold px-10 py-3 rounded-lg text-lg shadow-lg border border-[#eac16c] hover:opacity-90 transition text-center"
+          >
+            Get Homework Help now!
+          </a>
+        </div>
+
       </div>
     </section>
   );
