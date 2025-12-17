@@ -93,7 +93,6 @@ export default function Footer() {
 
 
         {/* About */}
-        import Link from "next/link";
 
         <div>
           <h3 className="font-bold text-lg mb-4">About</h3>
