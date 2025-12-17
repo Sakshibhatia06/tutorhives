@@ -4,10 +4,6 @@ import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
-  /**
-   * Source: https://www.joshwcomeau.com/react/the-perils-of-rehydration/
-   * Reason: To fix rehydration error
-   */
   const [hasMounted, setHasMounted] = React.useState(false);
   React.useEffect(() => {
     setHasMounted(true);
@@ -19,7 +15,7 @@ const Contact = () => {
   return (
     <>
       {/* <!-- ===== Contact Start ===== --> */}
-      <section id="support" className="px-4 md:px-8 2xl:px-0">
+      <section id="support" className="px-4 py-20 md:px-8 2xl:px-0">
         <div className="relative mx-auto max-w-c-1390 px-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
           <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-linear-to-t from-transparent to-[#dee7ff47] dark:bg-linear-to-t dark:to-[#252A42]"></div>
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
@@ -183,7 +179,7 @@ const Contact = () => {
                   Email Address
                 </h3>
                 <p>
-                  <a href="mailto:assignmentssolver365@gmail.com">assignmentssolver365@gmail.com</a>
+                  <a href="mailto:tutorhives339@gmail.com">tutorhives339@gmail.com</a>
                 </p>
               </div>
               <div>
@@ -191,7 +187,18 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <a href="tel:+917763875269"> +91 7763875269</a>
+                  <a href="tel:+918521389694"> +918521389694</a>
+                </p>
+              </div>
+              <div>
+                <h4 className="mt-5 mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                  Address
+                </h4>
+                <p>
+                  Building Number: 170, Block B
+Shapoorji Housing Complex, Newtown
+Kolkata, West Bengal – 700135
+India
                 </p>
               </div>
             </motion.div>

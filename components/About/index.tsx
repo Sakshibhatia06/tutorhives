@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       {/* <!-- ===== About Start ===== --> */}
-      <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
+      <section className="mt-40 overflow-hidden pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-32.5">
             {/* ===== Left Image ===== */}
@@ -79,7 +79,7 @@ const About = () => {
                 </li>
               </ul>
 
-              <div className="flex justify-center mt-12">
+              <div className="flex justify-left mt-12">
                 <a
                   href="https://wa.me/918521389694?text=Hi%20Tutor%20Hives%0AI%20need%20help%20with%20my%20assignment"
                   target="_blank"
